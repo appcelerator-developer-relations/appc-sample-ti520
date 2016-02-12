@@ -1,0 +1,38 @@
+<Alloy>
+	<Window title="Keyboard">
+		<ScrollView>
+			<View class="vbox">
+
+				<Label class="help">Ti.TextField.keyboardType</Label>
+				<TabbedBar class="tpad-s" index=0 onClick="changeKeyboardType">
+					<Labels>
+						<Label>DEFAULT</Label>
+						<Label>TWITTER</Label>
+						<Label>WEBSEARCH</Label>
+					</Labels>
+				</TabbedBar>
+
+				<Label class="help tpad">Ti.TextField.keyboardAppearance</Label>
+				<TabbedBar class="tpad-s" index=0 onClick="changeKeyboardAppearance">
+					<Labels>
+						<Label>DEFAULT</Label>
+						<Label>DARK</Label>
+						<Label>LIGHT</Label>
+					</Labels>
+				</TabbedBar>
+
+				<Label class="help tpad">Ti.TextField.returnKeyType</Label>
+				<TabbedBar class="tpad-s" index=0 onClick="changeReturnKeyType">
+					<Labels>
+						<Label>DEFAULT</Label>
+						<Label>CONTINUE</Label>
+					</Labels>
+				</TabbedBar>
+
+				<Label class="help tpad">Change the TextField's properties above and then focus on it (using the soft keyboard) to see the result:</Label>
+				<TextField id="textField" class="tpad-s" />
+
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

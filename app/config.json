@@ -1,0 +1,17 @@
+{
+	"global": {
+		"brandPrimary": "#CD1625",
+		"brandSecondary": "#484950",
+		"threadOperations": 50000,
+		"minVersion": "1.7.20"
+	},
+	"env:development": {},
+	"env:test": {},
+	"env:production": {},
+	"os:android": {},
+	"os:blackberry": {},
+	"os:ios": {},
+	"os:mobileweb": {},
+	"os:windows": {},
+	"dependencies": {}
+}

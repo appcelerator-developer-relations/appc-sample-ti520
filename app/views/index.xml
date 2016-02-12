@@ -1,0 +1,21 @@
+<Alloy>
+
+	<!-- For supported environments (see alloy.js) -->
+	<NavigationWindow module="xp.ui" if="Alloy.Globals.isSupported">
+		<Window title="Titanium 5.2.0">
+			<ListView onItemclick="onListViewItemclick">
+				<ListSection>
+					<ListItem platform="android" itemId="streetview" title="Google Maps StreetView" />
+					<ListItem platform="ios" itemId="livephoto" title="Live Photo" />
+					<ListItem platform="ios" itemId="keyboard" title="Keyboard" />
+				</ListSection>
+			</ListView>
+		</Window>
+	</NavigationWindow>
+
+	<!-- For unsupported environments -->
+	<Window if="!Alloy.Globals.isSupported">
+		<Label>This sample requires Titanium 5.2.</Label>
+	</Window>
+
+</Alloy>

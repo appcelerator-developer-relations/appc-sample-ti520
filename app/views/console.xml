@@ -1,0 +1,13 @@
+<Alloy>
+	<Tab title="Console">
+		<Window title="Console">
+
+			<RightNavButton platform="ios" systemButton="TRASH" onClick="clearLogs" />
+
+			<ScrollView id="scrollView">
+				<Label id="log" />
+			</ScrollView>
+
+		</Window>
+	</Tab>
+</Alloy>
