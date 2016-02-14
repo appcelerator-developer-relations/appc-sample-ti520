@@ -12,6 +12,7 @@ function changeKeyboardAppearance(e) {
   var keyboardAppearance = 'KEYBOARD_APPEARANCE_' + e.source.labels[e.index].title;
   log.args('keyboardAppearance', 'Ti.UI.' + keyboardAppearance);
 
+  // Notice that since 5.2 you should use keyboardAppearance instead of appearance
   $.textField.keyboardAppearance = Ti.UI[keyboardAppearance];
   $.textField.blur();
 }

@@ -1,0 +1,10 @@
+<Alloy>
+	<Window title="Progress Bar">
+		<View>
+
+			<Label class="help" top="20">Ti.UI.ProgressBar.trackTintColor</Label>
+			<ProgressBar top="50" message="33%" trackTintColor="red" />
+
+		</View>
+	</Window>
+</Alloy>

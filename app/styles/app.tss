@@ -40,7 +40,19 @@ overrode the settings with other TSS, XML, or JS settings:
 	width: 280
 }
 
+"ButtonBar": {
+  width: 280
+}
+
+"TabbedBar": {
+	width: 280
+}
+
 'TextField': {
+	width: 280
+}
+
+"ProgressBar": {
 	width: 280
 }
 

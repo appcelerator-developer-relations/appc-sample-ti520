@@ -1,0 +1,7 @@
+"ProgressBar": {
+  min: 0,
+  max: 10,
+  value: 5,
+  color: 'blue',
+  style: Titanium.UI.iPhone.ProgressBarStyle.PLAIN
+}

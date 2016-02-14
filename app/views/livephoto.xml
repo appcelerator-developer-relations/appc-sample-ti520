@@ -7,7 +7,18 @@
 
 				<Button class="tpad" onClick="openPhotoGallery">Ti.Media.openPhotoGallery()</Button>
 
-				<Button class="tpad" onClick="showCamera">Ti.Media.showCamera()</Button>
+				<!-- FIXME: https://jira.appcelerator.org/browse/ALOY-1356 -->
+				<LivePhotoView ns="Ti.UI.iOS" id="livePhotoView" class="tpad" onStart="onLivePhotoViewStartStop" onStop="onLivePhotoViewStartStop" />
+
+				<Label class="help tpad">startPlaybackWithStyle()</Label>
+				<ButtonBar class="tpad-s" onClick="startPlaybackWithStyle">
+					<Labels>
+						<Label>FULL</Label>
+						<Label>HINT</Label>
+					</Labels>
+				</ButtonBar>
+
+				<Button class="tpad" onClick="stopPlayback">stopPlayback()</Button>
 
 			</View>
 		</ScrollView>

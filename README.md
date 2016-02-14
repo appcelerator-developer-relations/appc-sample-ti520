@@ -1,4 +1,4 @@
-# Titanium 5.1.0 Sample App
+# Titanium 5.2.0 Sample App
 
 > **NOTE:** This Sample App requires Titanium 5.2.0
 
@@ -6,20 +6,26 @@ The [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relati
 
 For a full list of changes see the [Release Notes](http://docs.appcelerator.com/platform/latest/#!/guide/Titanium_SDK_5.2.0_Release_Note).
 
-## Live Photo (blocked)
+- ADD CONSOLE
 
-* Titanium.Media.MEDIA_TYPE_LIVEPHOTO
-* Titanium.UI.iOS.LIVEPHOTO_PLAYBACK_STYLE_FULL
-* Titanium.UI.iOS.LivePhotoView
+## Live Photo (issues outstanding)
+
+* 👍 `Titanium.Media.MEDIA_TYPE_LIVEPHOTO`
+* 👍 `Titanium.UI.iOS.LIVEPHOTO_PLAYBACK_STYLE_FULL|HINT`
+* 👍 `Titanium.UI.iOS.LivePhotoView`
 
 ## iOS: Keyboard (coded)
 
-* `Ti.UI.(TextArea|Field).appearance` > `Ti.UI.(TextArea|Field).keyboardAppearance`
+* 👍 `Ti.UI.(TextArea|Field).appearance` > `Ti.UI.(TextArea|Field).keyboardAppearance`
 * 👍 `Titanium.UI.KEYBOARD_TYPE_TWITTER`
 * 👍 `Titanium.UI.KEYBOARD_TYPE_WEBSEARCH`
 * 👍 `Titanium.UI.KEYBOARD_APPEARANCE_DARK` (use instead of soon to be deprecated alert)
 * 👍 `Titanium.UI.KEYBOARD_APPEARANCE_LIGHT` (same as default and `_DEFAULT`)
 * 👍 `Titanium.UI.RETURNKEY_CONTINUE`
+
+## iOS: ProgressBar
+
+* Titanium.UI.ProgressBar.trackTintColor
 
 ## Android: View Transitions
 
@@ -27,13 +33,9 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## iOS: ListView
 
-* Titanium.UI.ListItem.canInsert	
+* Titanium.UI.ListItem.canInsert
 * Titanium.UI.ListItem.dragend
 * Titanium.UI.ListItem.dragstart
-
-## iOS: ProgressBar
-
-* Titanium.UI.ProgressBar.trackTintColor
 
 ## Android: TableView
 
