@@ -1,7 +1,11 @@
 "ProgressBar": {
-  min: 0,
-  max: 10,
-  value: 5,
-  color: 'blue',
-  style: Titanium.UI.iPhone.ProgressBarStyle.PLAIN
+  value: 0.33,
+
+  color: 'blue',          // message color
+  tintColor: 'green',     // completed part
+  trackTintColor: 'red',  // incompleted part
+
+  // FIXME: https://jira.appcelerator.org/browse/TIMOB-20404
+  bottom: 20,
+  height: Ti.UI.SIZE
 }

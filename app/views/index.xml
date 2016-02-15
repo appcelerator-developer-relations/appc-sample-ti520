@@ -10,11 +10,13 @@
 						<ListItem platform="ios" itemId="livephoto" title="Live Photo" />
 						<ListItem platform="ios" itemId="keyboard" title="Keyboard" />
 						<ListItem platform="ios" itemId="progressbar" title="Progress Bar" />
+						<ListItem platform="ios" itemId="tab" title="Tab" />
 					</ListSection>
 				</ListView>
 			</Window>
 		</Tab>
-		<Tab title="Console">
+		<Require src="tab" />
+		<Tab id="consoleTab" title="Console">
 			<Require src="console" />
 		</Tab>
 	</TabGroup>

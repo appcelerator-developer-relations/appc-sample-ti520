@@ -25,11 +25,17 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## iOS: ProgressBar
 
-* Titanium.UI.ProgressBar.trackTintColor
+* 👍 `Titanium.UI.ProgressBar.trackTintColor`
 
-## Android: View Transitions
+## iOS: TabGroup
 
-* Titanium.UI.Android.TRANSITION_*
+* 👍 `Titanium.UI.Tab.iconInsets`
+* 👍 `Ti.UI.Tab.(blur|focus)` > `Ti.UI.Tab.(un)?selected`
+* 👍 `Ti.UI.TabGroup.(un)?selected` > `Ti.UI.TabGroup.(blur|focus)`
+
+## iOS: Popover
+
+* Titanium.UI.iPad.Popover.backgroundColor
 
 ## iOS: ListView
 
@@ -37,48 +43,11 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 * Titanium.UI.ListItem.dragend
 * Titanium.UI.ListItem.dragstart
 
-## Android: TableView
-
-* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
-* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE
-* Titanium.UI.TableView.maxClassname
-
-## iOS: TabGroup
-
-* Titanium.UI.Tab.iconInsets
-
-## Android: TextField
-
-* Titanium.UI.TextField.inputType
-
-## iOS: Story Board, Split View, iPad Pro etc
-
 ## iOS: Window
 
 * Titanium.UI.Window.swipeToClose
 
-## Android: Window
-
-* Titanium.UI.Window.addSharedElement
-* Titanium.UI.Window.removeAllSharedElements
-
-## iOS: Popover
-
-* Titanium.UI.iPad.Popover.backgroundColor
-
-## Ti.Map StreetView
-
-* createStreetViewPanorama
-* https://jira.appcelerator.org/browse/TIMOB-19751
-* ti.map 2.3.6 (Android only)
-
-## Android: Soft Navigation Bar
-
-* `<fullscreen>true</fullscreen>`
-
-## Android launcher shortcut
-
-* https://jira.appcelerator.org/browse/TIMOB-19679
+## iOS: Story Board, Split View, iPad Pro etc
 
 ## iOS 9 3D touch
 
@@ -94,6 +63,43 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 ## Swift watchOS 2 templates
 
 * Default or not?
+
+----------------------
+
+## Android: View Transitions
+
+* Titanium.UI.Android.TRANSITION_*
+
+## Android: TableView
+
+* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE
+* Titanium.UI.TableView.maxClassname
+
+## Android: TextField
+
+* Titanium.UI.TextField.inputType
+
+## Android: Window
+
+* Titanium.UI.Window.addSharedElement
+* Titanium.UI.Window.removeAllSharedElements
+
+## Ti.Map StreetView
+
+* createStreetViewPanorama
+* https://jira.appcelerator.org/browse/TIMOB-19751
+* ti.map 2.3.6 (Android only)
+
+## Android: Soft Navigation Bar
+
+* `<fullscreen>true</fullscreen>`
+
+## Android launcher shortcut
+
+* https://jira.appcelerator.org/browse/TIMOB-19679
+
+-------------------
 
 ## Renamed APIs
 

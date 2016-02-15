@@ -11,5 +11,12 @@
 })(arguments[0] || {});
 
 function onListViewItemclick(e) {
-	$.samplesTab.open(Alloy.createController(e.itemId).getView());
+	var controllerSrc = e.itemId;
+
+	if (controllerSrc === 'tab') {
+		$.index.tabs[1].active = true;
+		return;
+	}
+
+	$.samplesTab.open(Alloy.createController(controllerSrc).getView());
 }

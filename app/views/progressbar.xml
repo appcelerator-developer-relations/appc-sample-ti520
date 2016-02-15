@@ -1,10 +1,12 @@
 <Alloy>
 	<Window title="Progress Bar">
-		<View>
+		<ScrollView>
+			<View class="vbox">>
 
-			<Label class="help" top="20">Ti.UI.ProgressBar.trackTintColor</Label>
-			<ProgressBar top="50" message="33%" trackTintColor="red" />
+				<Label class="help">You could already set the color of the message (color:blue) and the completed part of the Progress Bar (tintColor:green). Now you also set the portion of the bar that is NOT filled (trackTintColor:red).</Label>
+				<ProgressBar class="tpad-s" message="[message]" />
 
-		</View>
+			</View>
+		</ScrollView>
 	</Window>
 </Alloy>
