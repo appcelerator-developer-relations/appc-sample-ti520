@@ -1,5 +1,14 @@
 var log = require('log');
 
+$.isSupported = function() {
+
+  if (OS_IOS) {
+    return true;
+  }
+
+  alert('This example requires iOS');
+};
+
 function changeKeyboardType(e) {
   var keyboardType = 'KEYBOARD_TYPE_' + e.source.labels[e.index].title;
   log.args('keyboardType', 'Ti.UI.' + keyboardType);

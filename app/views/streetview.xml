@@ -1,10 +1,8 @@
 <Alloy>
-	<Tab title="StreetView">
-		<Window title="StreetView">
+  <Window platform="android" title="StreetView">
 
-			<!-- Note the module-tag here and the position set in streetview.tss -->
-			<StreetViewPanorama module="ti.map" />
+    <!-- Note the module-tag here and the position set in streetview.tss -->
+    <StreetViewPanorama module="ti.map"/>
 
-		</Window>
-	</Tab>
+  </Window>
 </Alloy>

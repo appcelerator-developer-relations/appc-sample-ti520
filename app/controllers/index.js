@@ -13,10 +13,17 @@
 function onListViewItemclick(e) {
 	var controllerSrc = e.itemId;
 
+	// Special case. We want to list the Tab sample but it should select the middle tab.
 	if (controllerSrc === 'tab') {
 		$.index.tabs[1].active = true;
 		return;
 	}
 
-	$.samplesTab.open(Alloy.createController(controllerSrc).getView());
+	var controller = Alloy.createController(controllerSrc);
+
+	if (!controller.isSupported()) {
+		return;
+	}
+
+	$.samplesTab.open(controller.getView());
 }

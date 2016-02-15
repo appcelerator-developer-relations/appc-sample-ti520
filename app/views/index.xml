@@ -6,11 +6,12 @@
 			<Window title="Samples">
 				<ListView onItemclick="onListViewItemclick">
 					<ListSection>
-						<ListItem platform="android" itemId="streetview" title="Google Maps StreetView" />
-						<ListItem platform="ios" itemId="livephoto" title="Live Photo" />
-						<ListItem platform="ios" itemId="keyboard" title="Keyboard" />
-						<ListItem platform="ios" itemId="progressbar" title="Progress Bar" />
-						<ListItem platform="ios" itemId="tab" title="Tab" />
+						<ListItem itemId="streetview" title="Google Maps StreetView" />
+						<ListItem itemId="livephoto" title="Live Photo" />
+						<ListItem itemId="keyboard" title="Keyboard" />
+						<ListItem itemId="progressbar" title="Progress Bar" />
+						<ListItem itemId="tab" title="Tab" />
+						<ListItem itemId="popover" title="Popover" />
 					</ListSection>
 				</ListView>
 			</Window>

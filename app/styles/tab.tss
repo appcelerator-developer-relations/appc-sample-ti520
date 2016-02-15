@@ -1,0 +1,6 @@
+"Tab": {
+  iconInsets: {
+    top: 5,
+    bottom: -5
+  }
+}

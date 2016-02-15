@@ -1,0 +1,30 @@
+<Alloy>
+
+  <Window title="Popover">
+    <ScrollView>
+      <View class="vbox">>
+
+        <Label class="help">Use the buttons to open the Popover without or with the new 'backgroundColor' property:</Label>
+
+        <ButtonBar class="tpad-s" onClick="openPopover">
+					<Labels>
+						<Label>Without</Label>
+						<Label>With</Label>
+					</Labels>
+				</ButtonBar>
+
+      </View>
+    </ScrollView>
+  </Window>
+
+  <Popover platform="ios" formFactor="tablet" id="popover">
+    <ContentView>
+      <Window width="280" height="Ti.UI.SIZE" backgroundColor="Alloy.CFG.brandPrimary">
+				<View class="vbox">
+        	<Label color="white">The backgroundColor you set on the ContentView of the Popover won't affect the Popover Arrow. With the new Popover backgroundColor property you can set this color as well.</Label>
+				</View>
+      </Window>
+    </ContentView>
+  </Popover>
+
+</Alloy>
