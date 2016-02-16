@@ -1,33 +1,37 @@
 <Alloy>
 
 	<Window title="MenuPopup">
-		<View class="vbox">
+		<ScrollView>
+			<View class="vbox">
 
-			<Label class="help">The new Ti.UI.iOS.MenuPopup API implements the iOS UIMenuController, also known as the editing menu since it usually displays commands like cut, copy paste etc.</Label>
+				<Label class="help">The new Ti.UI.iOS.MenuPopup API implements the iOS UIMenuController, also known as the editing menu since it usually displays commands like cut, copy paste etc.</Label>
 
-			<Label class="help tpad">See the controller for the implementation of the API's show(), hide() and isVisible() methods. The 'click' event gets you the title and index of the selected item as you can see in the console.</Label>
+				<Label class="help tpad">See the controller for the implementation of the API's show(), isVisible() and hide() methods. The last two of these methods will be used after a timeout of 1 second.</Label>
 
-			<Button class="tpad" onClick="showWithDefaults">Show with Defaults</Button>
+				<Label class="help tpad">The MenuPopup's 'click' event gets you the title and index of the selected item. You can see the full payload in the console.</Label>
 
-			<Label class="help tpad">Animated</Label>
-			<ButtonBar class="tpad-s" onClick="showWithAnimated">
-				<Labels>
-					<Label>Yes</Label>
-					<Label>No</Label>
-				</Labels>
-			</ButtonBar>
+				<Button class="tpad" onClick="showWithDefaults">Show with Defaults</Button>
 
-			<Label class="help tpad">arrowDirection</Label>
-			<ButtonBar class="tpad-s" onClick="showWithArrowDirection">
-				<Labels>
-					<Label>LEFT</Label>
-					<Label>UP</Label>
-					<Label>DOWN</Label>
-					<Label>RIGHT</Label>
-				</Labels>
-			</ButtonBar>
+				<Label class="help tpad">Animated</Label>
+				<ButtonBar class="tpad-s" onClick="showWithAnimated">
+					<Labels>
+						<Label>Yes</Label>
+						<Label>No</Label>
+					</Labels>
+				</ButtonBar>
 
-		</View>
+				<Label class="help tpad">arrowDirection</Label>
+				<ButtonBar class="tpad-s" onClick="showWithArrowDirection">
+					<Labels>
+						<Label>LEFT</Label>
+						<Label>UP</Label>
+						<Label>DOWN</Label>
+						<Label>RIGHT</Label>
+					</Labels>
+				</ButtonBar>
+
+			</View>
+		</ScrollView>
 	</Window>
 
 </Alloy>

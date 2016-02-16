@@ -6,14 +6,15 @@
 			<Window title="Samples">
 				<ListView onItemclick="onListViewItemclick">
 					<ListSection>
+						<ListItem itemId="touch" title="Force Touch &amp; Apple Pencil" />
 						<ListItem itemId="streetview" title="Google Maps StreetView" />
-						<ListItem itemId="livephoto" title="Live Photo" />
 						<ListItem itemId="keyboard" title="Keyboard (type, appearance and returnKeyType)" />
+						<ListItem itemId="livephoto" title="Live Photo" />
 						<ListItem itemId="menupopup" title="MenuPopup" />
-						<ListItem itemId="progressbar" title="Progress Bar (trackTintColor)" />
-						<ListItem itemId="tab" title="Tab (events and tabInsets)" />
 						<ListItem itemId="popover" title="Popover (backgroundColor)" />
+						<ListItem itemId="progressbar" title="Progress Bar (trackTintColor)" />
 						<ListItem itemId="scrollview" title="ScrollView (scroll.contentSize)" />
+						<ListItem itemId="tab" title="Tab (events and tabInsets)" />
 						<ListItem itemId="window" title="Window (swipeToClose)" />
 					</ListSection>
 				</ListView>

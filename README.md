@@ -45,9 +45,17 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 * 👍 Scroll event for  Titanium.UI.ScrollView now sends the contentSize property to scroll event.
 
-## iOS
+## iOS (ISSUE)
 
-* Added support for UIMenuController. A menu popup provides the ability to create custom tooltip options using the items property covering the native UIMenuController class. (https://jira.appcelerator.org/browse/TIMOB-5812)
+* 👍 Added support for UIMenuController. A menu popup provides the ability to create custom tooltip options using the items property covering the native UIMenuController class. (https://jira.appcelerator.org/browse/TIMOB-5812)
+
+## iOS 9 3D touch
+
+* 👍 force, maximumPossibleForce (properties on touch events)
+
+## iOS Contact Person Icon
+
+* Contact icons for Quick Actions (https://jira.appcelerator.org/browse/TIMOB-19716)
 
 ## iOS: ListView
 
@@ -56,12 +64,6 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 * Titanium.UI.ListItem.dragstart
 
 ## iOS: Story Board, Split View, iPad Pro etc
-
-## iOS 9 3D touch
-
-* force, maximumPossibleForce (properties on touch events)
-* Apple pencil APIs (properties on touch events)
-* Contact icons for Quick Actions (https://jira.appcelerator.org/browse/TIMOB-19716)
 
 ## Swift watchOS 2 templates
 
