@@ -9,6 +9,7 @@
 						<ListItem itemId="streetview" title="Google Maps StreetView" />
 						<ListItem itemId="livephoto" title="Live Photo" />
 						<ListItem itemId="keyboard" title="Keyboard (type, appearance and returnKeyType)" />
+						<ListItem itemId="menupopup" title="MenuPopup" />
 						<ListItem itemId="progressbar" title="Progress Bar (trackTintColor)" />
 						<ListItem itemId="tab" title="Tab (events and tabInsets)" />
 						<ListItem itemId="popover" title="Popover (backgroundColor)" />
