@@ -10,6 +10,7 @@
 						<ListItem itemId="touch" title="Force Touch &amp; Apple Pencil" />
 						<ListItem itemId="streetview" title="Google Maps StreetView" />
 						<ListItem itemId="keyboard" title="Keyboard (type, appearance and returnKeyType)" />
+						<ListItem itemId="listview" title="ListView (events and canInsert)" />
 						<ListItem itemId="livephoto" title="Live Photo" />
 						<ListItem itemId="menupopup" title="MenuPopup" />
 						<ListItem itemId="popover" title="Popover (backgroundColor)" />

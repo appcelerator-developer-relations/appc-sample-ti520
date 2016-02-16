@@ -1,0 +1,52 @@
+<Alloy>
+	<Window id="win" title="ListView">
+
+		<RightNavButtons>
+			<Button id="editBtn" systemButton="EDIT" onClick="enableEdit" />
+		</RightNavButtons>
+
+		<ListView id="listView" onDragstart="onDrag" onDragend="onDrag" onInsert="onInsert">
+			<Templates>
+				<ItemTemplate name="help">
+					<Label class="listHelp" bindId="title" />
+				</ItemTemplate>
+			</Templates>
+			<ListSection headerTitle="Help">
+				<ListItem template="help" title:text="Like TableView, ScrollView and others, ListView now also has 'dragstart' and 'dragend' events. See the console for the payloads." />
+				<ListItem template="help" title:text="You can set canInsert on a ListItem to display a '+' icon when the ListView is set to editing mode (toggle with right navigation button). You will receive an 'insert' event on the ListView when the icon is clicked on. It is up to you to further handle it using the payload you can see in the console." />
+			</ListSection>
+			<ListSection headerTitle="Alphabet">
+				<ListItem canInsert="true" title="Appcelerator" />
+				<ListItem canInsert="true" title="Bravo" />
+				<ListItem canInsert="true" title="Charlie" />
+				<ListItem canInsert="true" title="Delta" />
+				<ListItem canInsert="true" title="Echo" />
+				<ListItem canInsert="true" title="Foxtrot" />
+				<ListItem canInsert="true" title="Golf" />
+				<ListItem canInsert="true" title="Hyperloop" />
+				<ListItem canInsert="true" title="India" />
+				<ListItem canInsert="true" title="Juliett" />
+				<ListItem canInsert="true" title="Kilo" />
+				<ListItem canInsert="true" title="Lima" />
+				<ListItem canInsert="true" title="Mike" />
+				<ListItem canInsert="true" title="November" />
+				<ListItem canInsert="true" title="Oscar" />
+				<ListItem canInsert="true" title="Papa" />
+				<ListItem canInsert="true" title="Quebec" />
+				<ListItem canInsert="true" title="Romeo" />
+				<ListItem canInsert="true" title="Sierra" />
+				<ListItem canInsert="true" title="Titanium" />
+				<ListItem canInsert="true" title="Uniform" />
+				<ListItem canInsert="true" title="Victor" />
+				<ListItem canInsert="true" title="Whiskey" />
+				<ListItem canInsert="true" title="X-ray" />
+				<ListItem canInsert="true" title="Yankee" />
+				<ListItem canInsert="true" title="Zulu" />
+			</ListSection>
+		</ListView>
+
+	</Window>
+
+	<Button id="doneBtn" systemButton="DONE" onClick="disableEdit" />
+
+</Alloy>

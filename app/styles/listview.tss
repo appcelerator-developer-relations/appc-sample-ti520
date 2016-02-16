@@ -1,0 +1,12 @@
+"ItemTemplate": {
+  height: Ti.UI.SIZE
+}
+
+".listHelp": {
+  top: 10,
+  right: 10,
+  bottom: 10,
+  left: 20,
+
+  height: Ti.UI.SIZE
+}

@@ -59,9 +59,9 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## iOS: ListView
 
-* Titanium.UI.ListItem.canInsert
-* Titanium.UI.ListItem.dragend
-* Titanium.UI.ListItem.dragstart
+* 👍 `Titanium.UI.ListItem.canInsert`
+* 👍 `Titanium.UI.ListItem.dragend`
+* 👍 `Titanium.UI.ListItem.dragstart`
 
 ## iOS: Story Board, Split View, iPad Pro etc
 
