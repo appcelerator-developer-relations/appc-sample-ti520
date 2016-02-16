@@ -8,10 +8,12 @@
 					<ListSection>
 						<ListItem itemId="streetview" title="Google Maps StreetView" />
 						<ListItem itemId="livephoto" title="Live Photo" />
-						<ListItem itemId="keyboard" title="Keyboard" />
-						<ListItem itemId="progressbar" title="Progress Bar" />
-						<ListItem itemId="tab" title="Tab" />
-						<ListItem itemId="popover" title="Popover" />
+						<ListItem itemId="keyboard" title="Keyboard (type, appearance and returnKeyType)" />
+						<ListItem itemId="progressbar" title="Progress Bar (trackTintColor)" />
+						<ListItem itemId="tab" title="Tab (events and tabInsets)" />
+						<ListItem itemId="popover" title="Popover (backgroundColor)" />
+						<ListItem itemId="scrollview" title="ScrollView (scroll.contentSize)" />
+						<ListItem itemId="window" title="Window (swipeToClose)" />
 					</ListSection>
 				</ListView>
 			</Window>

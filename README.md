@@ -35,7 +35,19 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## iOS: Popover
 
-* Titanium.UI.iPad.Popover.backgroundColor
+* 👍 `Titanium.UI.iPad.Popover.backgroundColor`
+
+## iOS: Window
+
+* 👍 `Titanium.UI.Window.swipeToClose`
+
+## iOS: ScrollView
+
+* 👍 Scroll event for  Titanium.UI.ScrollView now sends the contentSize property to scroll event.
+
+## iOS
+
+* Added support for UIMenuController. A menu popup provides the ability to create custom tooltip options using the items property covering the native UIMenuController class. (https://jira.appcelerator.org/browse/TIMOB-5812)
 
 ## iOS: ListView
 
@@ -43,21 +55,12 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 * Titanium.UI.ListItem.dragend
 * Titanium.UI.ListItem.dragstart
 
-## iOS: Window
-
-* Titanium.UI.Window.swipeToClose
-
 ## iOS: Story Board, Split View, iPad Pro etc
 
 ## iOS 9 3D touch
 
 * force, maximumPossibleForce (properties on touch events)
 * Apple pencil APIs (properties on touch events)
-
-## iOS
-
-* Scroll event for  Titanium.UI.ScrollView now sends the contentSize property to scroll event.
-* Added support for UIMenuController. A menu popup provides the ability to create custom tooltip options using the items property covering the native UIMenuController class. (https://jira.appcelerator.org/browse/TIMOB-5812)
 * Contact icons for Quick Actions (https://jira.appcelerator.org/browse/TIMOB-19716)
 
 ## Swift watchOS 2 templates

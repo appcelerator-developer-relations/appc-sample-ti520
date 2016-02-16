@@ -1,0 +1,11 @@
+<Alloy>
+	<Window title="Window">
+		<View class="vbox">
+
+			<Label class="help">This window has swipeToclose set to false in its TSS. Therefor, you cannot close the Window by swiping from the left edge of the window.</Label>
+
+			<Label class="help tpad">Try any other example to see that by default you can swipe to close.</Label>
+
+		</View>
+	</Window>
+</Alloy>

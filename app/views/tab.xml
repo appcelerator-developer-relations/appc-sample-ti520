@@ -1,17 +1,15 @@
 <Alloy>
 	<Tab id="tabTab" onSelected="onTabSelection" onUnselected="onTabSelection">
 		<Window title="Tab">
-			<ScrollView>
-				<View class="vbox">>
+			<View class="vbox">>
 
-					<Label class="help">Like on Android, Tabs on iOS now have 'selected' and 'unselected' events. See the Console for the payload.</Label>
+				<Label class="help">Like on Android, Tabs on iOS now have 'selected' and 'unselected' events. See the Console for the payload.</Label>
 
-					<Label class="help tpad">Also note that the introduction of these events on the TabGroup in 5.1 has been reverted. Just use 'focus' and 'blur' as you did before.</Label>
+				<Label class="help tpad">Also note that the introduction of these events on the TabGroup in 5.1 has been reverted. Just use 'focus' and 'blur' as you did before.</Label>
 
-					<Label class="help tpad">On iOS you can now change the position of the tab icon. See the TSS to see how we moved the icon down a bit.</Label>
+				<Label class="help tpad">On iOS you can now change the position of the tab icon. See the TSS to see how we moved the icon down a bit.</Label>
 
-				</View>
-			</ScrollView>
+			</View>
 		</Window>
 	</Tab>
 </Alloy>
