@@ -6,6 +6,7 @@
 			<Window title="Samples">
 				<ListView onItemclick="onListViewItemclick">
 					<ListSection>
+						<ListItem itemId="personicon" title="Contact Application Shortcut Icon" />
 						<ListItem itemId="touch" title="Force Touch &amp; Apple Pencil" />
 						<ListItem itemId="streetview" title="Google Maps StreetView" />
 						<ListItem itemId="keyboard" title="Keyboard (type, appearance and returnKeyType)" />

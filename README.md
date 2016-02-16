@@ -55,7 +55,7 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## iOS Contact Person Icon
 
-* Contact icons for Quick Actions (https://jira.appcelerator.org/browse/TIMOB-19716)
+* 👍 Contact icons for Quick Actions (https://jira.appcelerator.org/browse/TIMOB-19716)
 
 ## iOS: ListView
 
