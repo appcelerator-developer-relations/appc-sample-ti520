@@ -53,6 +53,24 @@
         <string>UIStatusBarStyleLightContent</string>
       </dict>
     </plist>
+    <extensions>
+      <extension projectPath="extensions/Ti 5.2.0/Ti 5.2.0.xcodeproj">
+        <target name="Ti 5.2.0 WatchKit Extension">
+          <provisioning-profiles>
+            <device/>
+            <dist-appstore/>
+            <dist-adhoc/>
+          </provisioning-profiles>
+        </target>
+        <target name="Ti 5.2.0 WatchKit App">
+          <provisioning-profiles>
+            <device/>
+            <dist-appstore/>
+            <dist-adhoc/>
+          </provisioning-profiles>
+        </target>
+      </extension>
+    </extensions>
   </ios>
   <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest>

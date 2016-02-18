@@ -65,8 +65,8 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 * 👍 Enable
 * 👍 Background color
-* Launch Logo
-* Custom Storyboard
+* 👍 Launch Logo
+* 👍 Custom Storyboard > Explain how to clean cache
 
 ## Swift watchOS 2 templates
 

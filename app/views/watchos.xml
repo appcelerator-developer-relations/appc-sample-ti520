@@ -1,0 +1,13 @@
+<Alloy>
+	<Window title="WatchOS 2 Swift Template">
+		<ScrollView>
+			<View class="vbox">
+
+				<Label class="help">Ti.TextField.keyboardType</Label>
+
+				<Label id="feedback" class="help tpad" />
+
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

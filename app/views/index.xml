@@ -17,6 +17,7 @@
 						<ListItem itemId="progressbar" title="Progress Bar (trackTintColor)" />
 						<ListItem itemId="scrollview" title="ScrollView (scroll.contentSize)" />
 						<ListItem itemId="tab" title="Tab (events and tabInsets)" />
+						<ListItem itemId="watchos" title="WatchOS 2 (Swift template)" />
 						<ListItem itemId="window" title="Window (swipeToClose)" />
 					</ListSection>
 				</ListView>
