@@ -6,7 +6,7 @@ The [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relati
 
 For a full list of changes see the [Release Notes](http://docs.appcelerator.com/platform/latest/#!/guide/Titanium_SDK_5.2.0_Release_Note).
 
-## Live Photo (issues outstanding)
+## iOS: Live Photos
 
 * 👍 `Titanium.Media.MEDIA_TYPE_LIVEPHOTO`
 * 👍 `Titanium.UI.iOS.LIVEPHOTO_PLAYBACK_STYLE_FULL|HINT`
@@ -43,11 +43,11 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 * 👍 Scroll event for  Titanium.UI.ScrollView now sends the contentSize property to scroll event.
 
-## iOS (ISSUE)
+## iOS: MenuPopup
 
 * 👍 Added support for UIMenuController. A menu popup provides the ability to create custom tooltip options using the items property covering the native UIMenuController class. (https://jira.appcelerator.org/browse/TIMOB-5812)
 
-## iOS 9 3D touch
+## iOS 9: 3D-Touch
 
 * 👍 force, maximumPossibleForce (properties on touch events)
 
@@ -117,7 +117,7 @@ Titanium 5.2 deprecates some APIs that we've renamed to make them more descripti
 * `Ti.Calendar.eventsAuthorization` > `Ti.Calendar.calendarAuthorization`
 * `Ti.Calendar.CAMERA_AUTHORIZATION_NOT_DETERMINED` > `Ti.Calendar.CAMERA_AUTHORIZATION_UNKNOWN`
 * `Ti.Media.cameraAuthorizationStatus` > `Ti.Media.cameraAuthorization`
-* `Ti.UI.KEYBOARD_*` > `Ti.UI.KEYBOARD_TYPE_*`
+* `Ti.UI.KEYBOARD_*` > `Ti.UI.KEYBOARD_TYPE_*` and `Ti.UI.KEYBOARD_APPEARANCE_*`
 * `Ti.UI.(TextArea|TextField|SearchBar).appearance` > `Ti.UI.($1).keyboardAppearance`
 * `Ti.UI.Tab.(blur|focus)` > `Ti.UI.Tab.(un)?selected`
 * `Ti.UI.TabGroup.(un)?selected` > `Ti.UI.TabGroup.(blur|focus)`
