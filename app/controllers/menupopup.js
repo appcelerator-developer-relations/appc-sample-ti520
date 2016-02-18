@@ -13,19 +13,21 @@ $.isSupported = function() {
 
 // Cannot be created in Alloy XML yet
 // FIXME: https://jira.appcelerator.org/browse/ALOY-1357
-$.menu = (function() {
+// $.menu = (function() {
+//
+//   var menu = Ti.UI.iOS.createMenuPopup({
+//     items: ['Option 1', 'Option 2']
+//   });
+//
+//   menu.addEventListener('click', onMenuPopupClick);
+//
+//   return menu;
+//
+// })();
 
-  var menu = Ti.UI.iOS.createMenuPopup({
-    items: ['Option 1', 'Option 2']
-  });
-
-  menu.addEventListener('click', function(e) {
-    log.args('Ti.UI.iOS.MenuPopup:click', e);
-  });
-
-  return menu;
-
-})();
+function onMenuPopupClick(e) {
+  log.args('Ti.UI.iOS.MenuPopup:click', e);
+}
 
 function showWithDefaults(e) {
   show({
@@ -50,8 +52,6 @@ function showWithArrowDirection(e) {
 }
 
 function show(params) {
-
-  log.args('timeout', timeout);
 
   // if we didn't do so already, clear the timeout to auto-hide
   clearTimeout(timeout);

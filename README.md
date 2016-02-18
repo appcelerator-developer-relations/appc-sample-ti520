@@ -6,8 +6,6 @@ The [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relati
 
 For a full list of changes see the [Release Notes](http://docs.appcelerator.com/platform/latest/#!/guide/Titanium_SDK_5.2.0_Release_Note).
 
-- ADD CONSOLE
-
 ## Live Photo (issues outstanding)
 
 * 👍 `Titanium.Media.MEDIA_TYPE_LIVEPHOTO`
@@ -64,6 +62,11 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 * 👍 `Titanium.UI.ListItem.dragstart`
 
 ## iOS: Story Board, Split View, iPad Pro etc
+
+* 👍 Enable
+* 👍 Background color
+* Launch Logo
+* Custom Storyboard
 
 ## Swift watchOS 2 templates
 

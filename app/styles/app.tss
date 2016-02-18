@@ -14,7 +14,11 @@ overrode the settings with other TSS, XML, or JS settings:
 */
 
 'TabGroup': {
+
+	// by setting both two white you get a brighter kind of white
+	backgroundColor: 'white',
 	tabsBackgroundColor: 'white',
+
 	tabsTintColor: Alloy.CFG.brandPrimary
 }
 

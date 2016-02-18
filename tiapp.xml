@@ -18,24 +18,21 @@
     <!-- we test this sample on iOS 8.4 and later -->
     <min-ios-ver>8.4</min-ios-ver>
 
-    <!-- Remove or set to false to disable auto layout (default) -->
-    <!-- <use-autolayout>true</use-autolayout> -->
+    <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+    <default-background-color>#C7172C</default-background-color>
 
-    <!-- Remove or set to false to run JS on its own thread (default) -->
-    <!-- <run-on-main-thread>true</run-on-main-thread> -->
-
-    <!-- Remove or set to false to disable asset catalogs for image assets (default) -->
-    <!-- <use-app-thinning>true</use-app-thinning> -->
+    <use-auto-layout>true</use-auto-layout>
 
     <plist>
       <dict>
+
+        <!-- EXPLAIN -->
+        <key>UIRequiresFullScreen</key>
+        <false/>
+
         <key>UISupportedInterfaceOrientations~iphone</key>
         <array>
           <string>UIInterfaceOrientationPortrait</string>
-
-          <!-- This one is considered bad practice by Apple, but here to demonstrate auto layout -->
-          <string>UIInterfaceOrientationPortraitUpsideDown</string>
-
           <string>UIInterfaceOrientationLandscapeLeft</string>
           <string>UIInterfaceOrientationLandscapeRight</string>
         </array>
@@ -54,15 +51,6 @@
         <false/>
         <key>UIStatusBarStyle</key>
         <string>UIStatusBarStyleLightContent</string>
-
-        <!--
-        To use Geolocation you need to specify the reason using the follow key
-        or NSLocationWhenInUseUsageDescription if you only need it when the app runs.
-        You can localize the value in a i18n/<lang>/app.xml file (not strings.xml!)
-        -->
-        <key>NSLocationAlwaysUsageDescription</key>
-        <string>Deny or grant permission to test different scenarios.</string>
-
       </dict>
     </plist>
   </ios>
@@ -87,7 +75,7 @@
     <target device="mobileweb">false</target>
     <target device="windows">false</target>
   </deployment-targets>
-  <sdk-version>5.2.0</sdk-version>
+  <sdk-version>5.2.0.RC</sdk-version>
   <plugins>
     <plugin version="1.0">ti.alloy</plugin>
   </plugins>
