@@ -114,7 +114,7 @@ Titanium 5.2 deprecates some APIs that we've renamed to make them more descripti
 * `Ti.Calendar.eventsAuthorization` > `Ti.Calendar.calendarAuthorization`
 * `Ti.Calendar.CAMERA_AUTHORIZATION_NOT_DETERMINED` > `Ti.Calendar.CAMERA_AUTHORIZATION_UNKNOWN`
 * `Ti.Media.cameraAuthorizationStatus` > `Ti.Media.cameraAuthorization`
-* `Ti.UI.KEYBOARD_*` > `Ti.UI.KEYBOARD_TYPE_*` and `Ti.UI.KEYBOARD_APPEARACNE_*`
+* `Ti.UI.KEYBOARD_*` > `Ti.UI.KEYBOARD_TYPE_*` and `Ti.UI.KEYBOARD_APPEARANCE_*`
 * `Ti.UI.(TextArea|TextField|SearchBar).appearance` > `Ti.UI.($1).keyboardAppearance`
 * `Ti.UI.Tab.(blur|focus)` > `Ti.UI.Tab.(un)?selected`
 * `Ti.UI.TabGroup.(un)?selected` > `Ti.UI.TabGroup.(blur|focus)`
