@@ -1,6 +1,23 @@
 'StreetViewPanorama': {
 	position: {
-		latitude:1.281581286057009,
-		longitude:103.8641372560966
+		latitude: 37.3676332,
+		longitude: -121.9139205
 	}
+}
+
+'.buttons': {
+	top: 0,
+	right: 10,
+	width: Ti.UI.SIZE,
+	height: Ti.UI.SIZE,
+
+	layout: 'vertical'
+}
+
+'Button': {
+	top: 10,
+	right: 0,
+	width: Ti.UI.SIZE,
+
+	backgroundColor: Alloy.CFG.brandSuccess
 }

@@ -65,24 +65,18 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 * 👍 Enable
 * 👍 Background color
-* 👍 Launch Logo
-* 👍 Custom Storyboard > Explain how to clean cache
+* 👍 Launch Logo > Compare size with original launch images
+* 👍 Custom Storyboard > Explain how to clean cache, test iPad Pro & SplitView
 
 ## Swift watchOS 2 templates
 
-* Default or not?
+* 👍 Default
 
 ----------------------
 
-## Android: View Transitions
+## Ti.Map StreetView
 
-* Titanium.UI.Android.TRANSITION_*
-
-## Android: TableView
-
-* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
-* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE
-* Titanium.UI.TableView.maxClassname
+* 👍 createStreetViewPanorama
 
 ## Android: TextField
 
@@ -93,11 +87,15 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 * Titanium.UI.Window.addSharedElement
 * Titanium.UI.Window.removeAllSharedElements
 
-## Ti.Map StreetView
+## Android: View Transitions
 
-* createStreetViewPanorama
-* https://jira.appcelerator.org/browse/TIMOB-19751
-* ti.map 2.3.6 (Android only)
+* Titanium.UI.Android.TRANSITION_*
+
+## Android: TableView
+
+* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE
+* Titanium.UI.TableView.maxClassname
 
 ## Android: Soft Navigation Bar
 

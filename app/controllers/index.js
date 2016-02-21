@@ -11,6 +11,12 @@
 })(arguments[0] || {});
 
 function onListViewItemclick(e) {
+  var item = e.section.getItemAt(e.itemIndex);
+
+  if (item.properties.unsupported) {
+    return alert('Your device does not meet the requirements for this example.');
+  }
+
   var controllerSrc = e.itemId;
 
   // Special case. We want to list the Tab sample but it should select the middle tab.
@@ -20,10 +26,6 @@ function onListViewItemclick(e) {
   }
 
   var controller = Alloy.createController(controllerSrc);
-
-  if (!controller.isSupported()) {
-    return;
-  }
 
   $.samplesTab.open(controller.getView());
 }

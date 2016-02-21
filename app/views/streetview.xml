@@ -2,7 +2,14 @@
   <Window platform="android" title="StreetView">
 
     <!-- Note the module-tag here and the position set in streetview.tss -->
-    <StreetViewPanorama module="ti.map"/>
+    <StreetViewPanorama module="ti.map" id="streetView" />
+
+    <View class="buttons">
+      <Button title="panning" onClick="toggle" />
+      <Button title="zoom" onClick="toggle" />
+      <Button title="streetNames" onClick="toggle" />
+      <Button title="userNavigation" onClick="toggle" />
+    </View>
 
   </Window>
 </Alloy>

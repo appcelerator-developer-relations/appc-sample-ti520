@@ -2,8 +2,9 @@
 	"global": {
 		"brandPrimary": "#CD1625",
 		"brandSecondary": "#484950",
+		"brandSuccess": "#5cb85c",
 		"threadOperations": 50000,
-		"minVersion": "1.7.20"
+		"minVersion": "1.7.34"
 	},
 	"env:development": {},
 	"env:test": {},

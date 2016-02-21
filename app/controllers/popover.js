@@ -1,12 +1,3 @@
-$.isSupported = function() {
-
-  if (OS_IOS && Alloy.isTablet) {
-    return true;
-  }
-
-  alert('This example requires an iPad');
-};
-
 function openPopover(e) {
   $.popover.backgroundColor = (e.index === 1) ? Alloy.CFG.brandPrimary : '';
 

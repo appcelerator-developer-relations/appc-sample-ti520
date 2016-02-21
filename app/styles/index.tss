@@ -1,4 +1,42 @@
-'Label': {
+'.item[platform=ios]': {
+	left: 20
+}
+
+'.item[platform=android]': {
+	left: 5
+}
+
+'.itemTitle': {
+	top: 0,
+	color: 'black'
+}
+
+'.itemSubtitle': {
+	top: 20,
+	color: 'grey'
+}
+
+'.ios[platform=!ios]': {
+	unsupported: true
+}
+
+'.ipad[platform=!ios,formFactor=!tablet]': {
+	unsupported: true
+}
+
+'.android[platform=!android]': {
+	unsupported: true
+}
+
+'.forcetouch[if=!Alloy.Globals.isForceTouchSupported]': {
+	unsupported: true
+}
+
+'.watch[if=!Alloy.Globals.isWatchSupported]': {
+	unsupported: true
+}
+
+'.unsupported': {
 
 	// Add some margin left and right
 	left: 20,

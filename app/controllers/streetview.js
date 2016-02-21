@@ -1,8 +1,7 @@
-$.isSupported = function() {
+function toggle(e) {
+  var property = e.source.title;
+  var value = !(e.source.backgroundColor === Alloy.CFG.brandSuccess);
 
-  if (OS_ANDROID) {
-    return true;
-  }
-
-  alert('This example requires Android');
-};
+  $.streetView[property] = value;
+  e.source.backgroundColor = value ? Alloy.CFG.brandSuccess : Alloy.CFG.brandSecondary;
+}

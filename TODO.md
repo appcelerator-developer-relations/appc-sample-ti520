@@ -1,3 +1,8 @@
+## CLEANUP
+
+- Platform folders
+- Better filenames
+
 ## BUGS
 
 - 👍 Launch Image: https://jira.appcelerator.org/browse/TIMOB-20393
@@ -12,3 +17,6 @@
 - Storyboard full rebuild: https://jira.appcelerator.org/browse/TIMOB-20430
 - LaunchLogo with custom storyboard: https://jira.appcelerator.org/browse/TIMOB-20429
 - Swift template does not work: https://jira.appcelerator.org/browse/TIMOB-19455
+- StreetView does not work in emulator: https://jira.appcelerator.org/browse/TIMOB-19751?focusedCommentId=377445&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377445
+- inputType for TextArea: https://jira.appcelerator.org/browse/TIMOB-5817?focusedCommentId=377458&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377458
+- inputType > Types: https://jira.appcelerator.org/browse/TIMOB-5817?focusedCommentId=377465&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377465

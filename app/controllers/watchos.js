@@ -1,14 +1,5 @@
 var log = require('log');
 
-$.isSupported = function() {
-
-  if (OS_IOS) {
-    return true;
-  }
-
-  alert('This example requires iOS');
-};
-
 var PROPS = ['isSupported', 'isPaired', 'isReachable', 'isWatchAppInstalled'];
 
 (function constructor() {

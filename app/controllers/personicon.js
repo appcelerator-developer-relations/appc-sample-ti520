@@ -1,14 +1,5 @@
 var log = require('log');
 
-$.isSupported = function() {
-
-  if (OS_IOS && Ti.UI.iOS.forceTouchSupported) {
-    return true;
-  }
-
-  alert('This example requires iOS and an iOS device that supports the 3D-Touch capability "Force Touch"');
-};
-
 (function constructor() {
   Ti.App.iOS.addEventListener('shortcutitemclick', onShortcutitemclick);
 })();

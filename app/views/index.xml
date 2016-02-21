@@ -4,26 +4,33 @@
 	<TabGroup>
 		<Tab id="samplesTab" title="Samples">
 			<Window title="Samples">
-				<ListView onItemclick="onListViewItemclick">
+				<ListView defaultItemTemplate="sample" onItemclick="onListViewItemclick">
+					<Templates>
+						<ItemTemplate name="sample">
+							<Label bindId="title" class="item itemTitle" />
+							<Label bindId="subtitle" class="item itemSubtitle" />
+						</ItemTemplate>
+					</Templates>
 					<ListSection>
-						<ListItem itemId="personicon" title="Contact Application Shortcut Icon" />
-						<ListItem itemId="touch" title="Force Touch &amp; Apple Pencil" />
-						<ListItem itemId="streetview" title="Google Maps StreetView" />
-						<ListItem itemId="keyboard" title="Keyboard (type, appearance and returnKeyType)" />
-						<ListItem itemId="listview" title="ListView (events and canInsert)" />
-						<ListItem itemId="livephoto" title="Live Photo" />
-						<ListItem itemId="menupopup" title="MenuPopup" />
-						<ListItem itemId="popover" title="Popover (backgroundColor)" />
-						<ListItem itemId="progressbar" title="Progress Bar (trackTintColor)" />
-						<ListItem itemId="scrollview" title="ScrollView (scroll.contentSize)" />
-						<ListItem itemId="tab" title="Tab (events and tabInsets)" />
-						<ListItem itemId="watchos" title="WatchOS 2 (Swift template)" />
-						<ListItem itemId="window" title="Window (swipeToClose)" />
+						<ListItem itemId="personicon" title:text="Contact Application Shortcut Icon!" subtitle:text="iOS, Force Touch" class="ios forcetouch" />
+						<ListItem itemId="touch" title:text="Force Touch &amp; Apple Pencil" subtitle:text="iOS, Force Touch" class="ios forcetouch" />
+						<ListItem itemId="streetview" title:text="Google Maps StreetView" subtitle:text="Android" class="android device" />
+						<ListItem itemId="keyboard" title:text="Keyboard (type, appearance and returnKeyType)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="inputtype" title:text="Keyboard (inputType)" subtitle:text="Android" class="android" />
+						<ListItem itemId="listview" title:text="ListView (events and canInsert)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="livephoto" title:text="Live Photo" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="menupopup" title:text="MenuPopup" subtitle:text="iPad" class="ipad" />
+						<ListItem itemId="popover" title:text="Popover (backgroundColor)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="progressbar" title:text="Progress Bar (trackTintColor)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="scrollview" title:text="ScrollView (scroll.contentSize)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="tab" title:text="Tab (events and tabInsets)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="watchos" title:text="WatchOS 2 (Swift template)" subtitle:text="iOS, Watch" class="ios watch" />
+						<ListItem itemId="window" title:text="Window (swipeToClose)" subtitle:text="iOS" class="ios" />
 					</ListSection>
 				</ListView>
 			</Window>
 		</Tab>
-		<Require src="tab" />
+		<Require platform="ios" src="tab" />
 		<Tab id="consoleTab" title="Console">
 			<Require src="console" />
 		</Tab>
@@ -31,7 +38,7 @@
 
 	<!-- For unsupported environments -->
 	<Window if="!Alloy.Globals.isSupported">
-		<Label>This sample requires Titanium 5.2.</Label>
+		<Label class="unsupported">This sample requires Titanium 5.2.</Label>
 	</Window>
 
 </Alloy>

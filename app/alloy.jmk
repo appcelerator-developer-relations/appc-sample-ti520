@@ -20,7 +20,7 @@ task('pre:load', function(event, logger) {
 		logger.error(error);
 		logger.error(line);
 
-		process.exit(1);
+		// process.exit(1);
 	}
 });
 

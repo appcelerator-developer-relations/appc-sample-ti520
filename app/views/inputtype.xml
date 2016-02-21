@@ -1,0 +1,18 @@
+<Alloy>
+	<Window title="Keyboard">
+		<ScrollView>
+			<View class="vbox">
+
+				<Label class="help">Ti.UI.INPUT_TYPE_CLASS_NUMBER</Label>
+				<Switch id="number" class="tpad-s" onChange="setInputType" />
+
+				<Label class="help tpad">Ti.UI.INPUT_TYPE_CLASS_TEXT</Label>
+				<Switch id="text" class="tpad-s" onChange="setInputType" />
+
+				<Label class="help tpad">Enable one or both input types and then focus on the TextField (using the soft keyboard) to see the result:</Label>
+				<TextField id="textField" class="tpad-s" />
+
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

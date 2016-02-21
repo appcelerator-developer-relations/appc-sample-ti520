@@ -2,15 +2,6 @@ var log = require('log');
 
 var timeout;
 
-$.isSupported = function() {
-
-  if (OS_IOS) {
-    return true;
-  }
-
-  alert('This example requires iOS');
-};
-
 // Cannot be created in Alloy XML yet
 // FIXME: https://jira.appcelerator.org/browse/ALOY-1357
 // $.menu = (function() {
