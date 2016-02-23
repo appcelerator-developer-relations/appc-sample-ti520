@@ -1,11 +1,15 @@
-"Window" : {
+'Window' : {
+
+  // See the XML for the descriptions
+  // These are creation-only so we use Alloy.Globals to make them configurable
+  // FIXME: https://jira.appcelerator.org/browse/ALOY-1316
   activityExitTransition: Alloy.Globals.activityExitTransition,
   activityReenterTransition: Alloy.Globals.activityReenterTransition,
   activitySharedElementExitTransition: Alloy.Globals.activitySharedElementExitTransition,
   activitySharedElementReenterTransition: Alloy.Globals.activitySharedElementReenterTransition
 }
 
-"ImageView": {
+'ImageView': {
   width: 50,
   backgroundColor: 'white',
   borderRadius: 5

@@ -5,9 +5,12 @@ var log = require('log');
 })();
 
 function onClose(e) {
+
+  // Always clean up global event listeners
   Ti.App.iOS.removeEventListener('shortcutitemclick', onShortcutitemclick);
 }
 
+// Fired when the shortcut is used
 function onShortcutitemclick(e) {
   log.args('Ti.App.iOS:shortcutitemclick', e);
 
@@ -35,22 +38,28 @@ function createShortcut(e) {
 }
 
 function _createShortcut() {
+
   Ti.Contacts.showContacts({
+
+    // Called when the user has selected a contact person
     selectedPerson: function(e) {
       var appShortcuts = Ti.UI.iOS.createApplicationShortcuts();
 
       // remove previous shortcut of this type, if any
       appShortcuts.removeDynamicShortcut('contact');
 
+      // add the new shortcut
       appShortcuts.addDynamicShortcut({
         itemtype: 'contact',
         title: e.person.fullName,
-        icon: e.person,
         userInfo: {
           person: {
             fullName: e.person.fullName
           }
-        }
+        },
+
+        // use the contact person as the icon
+        icon: e.person
       });
 
       alert('Now move your app to the background and force touch the app icon to see the contact icon');

@@ -1,12 +1,15 @@
-"Window": {
+'Window': {
   backgroundColor: 'white',
 
+  // See the XML for the descriptions
+  // These are creation-only so we use Alloy.Globals to make them configurable
+  // FIXME: https://jira.appcelerator.org/browse/ALOY-1316
   activityEntryTransition: Alloy.Globals.activityEntryTransition,
   activityReturnTransition: Alloy.Globals.activityReturnTransition,
   activitySharedElementEntryTransition: Alloy.Globals.activitySharedElementEntryTransition,
   activitySharedElementReturnTransition: Alloy.Globals.activitySharedElementReturnTransition
 }
 
-"ImageView": {
+'ImageView': {
   width: Ti.UI.FILL
 }

@@ -1,4 +1,4 @@
-"ProgressBar": {
+'ProgressBar': {
   value: 0.33,
 
   color: 'blue',          // message color

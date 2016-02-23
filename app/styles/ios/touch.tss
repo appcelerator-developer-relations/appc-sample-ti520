@@ -1,11 +1,11 @@
-"#touchArea": {
+'#touchArea': {
   width: 280,
   height: 280,
-  backgroundColor: "#000",
+  backgroundColor: '#000',
   opacity: 1
 }
 
-"#feedback": {
+'#feedback': {
   width: 280,
   textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
 }

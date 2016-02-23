@@ -1,14 +1,5 @@
 var log = require('log');
 
-$.isSupported = function() {
-
-  if (OS_IOS) {
-    return true;
-  }
-
-  alert('This example requires iOS');
-};
-
 function enableEdit(e) {
   $.win.rightNavButton = $.doneBtn;
 
@@ -30,6 +21,7 @@ function onInsert(e) {
 
   var item = e.section.getItemAt(e.itemIndex);
 
+  // We insert a new item AFTER (+1) the selected item
   e.section.insertItemsAt(e.itemIndex + 1, [{
     properties: {
       canInsert: true,

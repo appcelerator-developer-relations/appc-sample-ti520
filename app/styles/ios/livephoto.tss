@@ -1,0 +1,5 @@
+'LivePhotoView': {
+   width: 280,
+   height: 280,
+   backgroundColor: '#CCC'
+}

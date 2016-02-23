@@ -10,7 +10,7 @@
   <icon>appicon.png</icon>
   <navbar-hidden>false</navbar-hidden>
 
-  <!-- EXPLAIN -->
+  <!-- Android: Set to true for the splash screen to take the full screen -->
   <fullscreen>true</fullscreen>
 
   <analytics>false</analytics>
@@ -18,21 +18,29 @@
   <property name="ti.ui.defaultunit" type="string">dp</property>
   <ios>
 
-    <!-- we test this sample on iOS 8.4 and later -->
-    <min-ios-ver>8.4</min-ios-ver>
+    <!-- We have tested this sample on iOS 9 -->
+    <min-ios-ver>9.0</min-ios-ver>
 
+    <!--
+    Toggle use of builtin or custom launch screen storyboard
+    Rename platform/ios/_LaunchScreen.storyboard to use this custom storyboard
+    -->
     <enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
+
+    <!-- Set backgroundColor for builtin storyboard and/or root view controller -->
     <default-background-color>#C7172C</default-background-color>
 
+    <!-- Enable to support iPad Split View and Slide Over -->
     <use-auto-layout>true</use-auto-layout>
 
     <plist>
       <dict>
 
-        <!-- EXPLAIN -->
+        <!-- Set to false to support iPad Split View and Slide Over -->
         <key>UIRequiresFullScreen</key>
         <false/>
 
+        <!-- Define User Activity used in index.js -->
         <key>NSUserActivityTypes</key>
         <array>
           <string>com.appcelerator.sample.ti520.tab</string>
@@ -61,6 +69,8 @@
         <string>UIStatusBarStyleLightContent</string>
       </dict>
     </plist>
+
+    <!-- Reference WatchOS2 Swift Extension -->
     <extensions>
       <extension projectPath="extensions/Ti 5.2.0/Ti 5.2.0.xcodeproj">
         <target name="Ti 5.2.0 WatchKit Extension">
@@ -79,18 +89,23 @@
         </target>
       </extension>
     </extensions>
+
   </ios>
   <android xmlns:android="http://schemas.android.com/apk/res/android">
     <manifest>
+
+      <!-- Use custom theme -->
       <application android:theme="@style/appcelerator">
 
+        <!-- Required to use StreetViewPanorama -->
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB1ATGRrby9stkKxvdl3SBYxSVB5Kkm7yM"/>
+
       </application>
     </manifest>
   </android>
   <modules>
 
-    <!-- Require the ti.map module bundled with the Titanium SDK -->
+    <!-- Require ti.map module bundled with the Titanium SDK for StreetViewPanorama -->
     <module platform="android">ti.map</module>
 
   </modules>

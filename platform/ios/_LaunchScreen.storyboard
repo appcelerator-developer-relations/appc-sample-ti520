@@ -20,7 +20,7 @@
                                 <rect key="frame" x="277" y="481" width="37" height="37"/>
                             </activityIndicatorView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="LCi-4j-qvb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="6BC-bC-4Rd"/>
                             <constraint firstItem="LCi-4j-qvb" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="C10-mx-zaF"/>

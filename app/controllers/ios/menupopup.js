@@ -2,6 +2,7 @@ var log = require('log');
 
 var timeout;
 
+// Alloy does not support PopupMenu yet
 // FIXME: https://jira.appcelerator.org/browse/ALOY-1357
 $.menu = (function() {
 
@@ -14,10 +15,6 @@ $.menu = (function() {
   return menu;
 
 })();
-
-function onMenuPopupClick(e) {
-  log.args('Ti.UI.iOS.MenuPopup:click', e);
-}
 
 function showWithDefaults(e) {
   show({
@@ -50,6 +47,7 @@ function show(params) {
 
   $.menu.show(params);
 
+  // To demonstrate isVisible and hide() we set a timeout
   timeout = setTimeout(function() {
 
     var isVisible = $.menu.isVisible();
@@ -65,6 +63,11 @@ function show(params) {
   }, 1000);
 }
 
+function onMenuPopupClick(e) {
+  log.args('Ti.UI.iOS.MenuPopup:click', e);
+}
+
+// Helper to display the constant name instead of its value
 function stringifyArrowDirection(params) {
   var clone = _.clone(params);
 

@@ -1,4 +1,6 @@
 'StreetViewPanorama': {
+
+	// We can set the position (but not the heading)
 	position: {
 		latitude: 37.3676332,
 		longitude: -121.9139205

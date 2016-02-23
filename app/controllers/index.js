@@ -19,15 +19,27 @@ var activity;
     }
   }
 
-  // Opens either the TabGroup or "Not Supported" Window depending on
-  // the Alloy.Globals.isSupported flag used in index.xml
-  $.index.open();
+  // To make it easier to see the full-screen splash screen on Android
+  if (OS_ANDROID) {
+
+    setTimeout(function() {
+
+      // Opens either the TabGroup or "Not Supported" Window depending on
+      // the Alloy.Globals.isSupported flag used in index.xml
+      $.index.open();
+
+    }, 3000);
+
+  } else {
+    $.index.open();
+  }
 
 })(arguments[0] || {});
 
 function onListViewItemclick(e) {
   var item = e.section.getItemAt(e.itemIndex);
 
+  // We use classes in index.xml with conditional TSS in index.tss to set this flag
   if (item.properties.unsupported) {
     return alert('Your device does not meet the requirements for this example.');
   }
@@ -45,6 +57,7 @@ function onListViewItemclick(e) {
   $.samplesTab.open(controller.getView());
 }
 
+// iOS: Show how the usage of needsSave has changed
 function initActivity() {
 
   activity = Ti.App.iOS.createUserActivity({
@@ -61,12 +74,14 @@ function initActivity() {
     Ti.App.iOS.addEventListener('continueactivity', function(e) {
       log.args('Ti.App.iOS:continueactivity', e);
 
+      // Activate the tab active on the other device
       if (e.activityType === 'com.appcelerator.sample.ti520.tab') {
         $.index.tabs[e.userInfo.activeTabIndex].active = true;
       }
 
     });
 
+    // When a tab receives focus
     $.index.addEventListener('focus', function(e) {
       var userInfo = {
         activeTabIndex: e.index
@@ -74,24 +89,35 @@ function initActivity() {
 
       log.args('Ti.App.iOS.UserActivity.userInfo', userInfo);
 
+      // Update the userInfo here, where before we would need to wait for
+      // the useractivitywillsave event
       activity.userInfo = userInfo;
 
+      // Inform iOS the activity has changed
       activity.needsSave = true;
     });
   }
 }
 
+// Android: Hack to delegate the creation of the TabGroup's menu to the active tab
 function initTabMenus() {
 
   $.index.addEventListener('open', function(e) {
+
     $.index.activity.onCreateOptionsMenu = function(e) {
+
+      // Delegate the creation of the menu to the active tab
       if ($.index.activeTab.window.activity.onCreateOptionsMenu) {
         $.index.activeTab.window.activity.onCreateOptionsMenu(e);
       }
     };
+
   });
 
+  // When a tab receives focus
   $.index.addEventListener('focus', function(e) {
+
+    // Force the TabGroup's menu to be regenerated
     $.index.activity.invalidateOptionsMenu();
   });
 

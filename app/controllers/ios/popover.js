@@ -1,4 +1,5 @@
 function openPopover(e) {
+
   $.popover.backgroundColor = (e.index === 1) ? Alloy.CFG.brandPrimary : '';
 
   $.popover.show({

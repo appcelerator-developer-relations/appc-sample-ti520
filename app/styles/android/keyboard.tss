@@ -1,0 +1,5 @@
+'Window': {
+
+  // Hide the softkeyboard when the Window opens (and the field receives focus)
+  windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}

@@ -1,0 +1,13 @@
+<Alloy>
+	<Window title="Force Touch & Apple Pencil">
+		<View class="vbox">
+
+			<Label class="help">The click, dblclick and touch* events now include additional information if the device supports Force Touch. Force Touch the square to see the information plus some visual feedback. If you don't use an Apple Pencil 'altitudeAngle' will be a fixed value.</Label>
+
+			<View id="touchArea" class="tpad" />
+
+			<Label id="feedback" class="tpad help" />
+
+		</View>
+	</Window>
+</Alloy>

@@ -6,12 +6,16 @@ function closeWindow() {
 
 function openWindowB() {
 
+  // For each setting
   ['activityEnterTransition', 'activityReturnTransition', 'activitySharedElementEnterTransition', 'activitySharedElementReturnTransition'].forEach(function(prop) {
     var constant = $[prop].getSelectedRow(0).title;
 
     if (constant === 'undefined') {
       log.args('Ti.UI.Window.' + prop, 'undefined');
+
+      // We set a global that will be used for the creation-only property in transitions_a.tss
       Alloy.Globals[prop] = undefined;
+
     } else {
       log.args('Ti.UI.Window.' + prop, 'Ti.UI.Android.' + constant);
       Alloy.Globals[prop] = Ti.UI.Android[constant];
@@ -19,9 +23,12 @@ function openWindowB() {
 
   });
 
+  // Get Window B
   var win = Alloy.createController('transitions_b').getView();
 
+  // Link shared elements using the transitionName also set in both XML files
   win.addSharedElement($.logo, 'logo');
 
+  // Open the Window
   win.open();
 }

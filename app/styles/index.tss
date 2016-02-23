@@ -27,7 +27,7 @@
 	unsupported: true
 }
 
-'.ipad[platform=!ios,formFactor=!tablet]': {
+'.tablet[formFactor=!tablet]': {
 	unsupported: true
 }
 

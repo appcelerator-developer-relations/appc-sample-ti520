@@ -3,7 +3,7 @@
 		<ScrollView>
 			<View class="vbox">
 
-				<Label class="help">Ti.TextField.keyboardType</Label>
+				<Label class="help">This sample app comes with a WatchOS 2 Extension in Swift. The following properties show the status of the WatchSession:</Label>
 
 				<Label id="feedback" class="help tpad" />
 
