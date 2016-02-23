@@ -1,0 +1,12 @@
+"Window" : {
+  activityExitTransition: Alloy.Globals.activityExitTransition,
+  activityReenterTransition: Alloy.Globals.activityReenterTransition,
+  activitySharedElementExitTransition: Alloy.Globals.activitySharedElementExitTransition,
+  activitySharedElementReenterTransition: Alloy.Globals.activitySharedElementReenterTransition
+}
+
+"ImageView": {
+  width: 50,
+  backgroundColor: 'white',
+  borderRadius: 5
+}

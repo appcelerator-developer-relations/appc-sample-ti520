@@ -17,7 +17,7 @@
     </ScrollView>
   </Window>
 
-  <Popover platform="ios" formFactor="tablet" id="popover">
+  <Popover id="popover">
     <ContentView>
       <Window width="280" height="Ti.UI.SIZE" backgroundColor="Alloy.CFG.brandPrimary">
 				<View class="vbox">

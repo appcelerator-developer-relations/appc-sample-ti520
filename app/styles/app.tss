@@ -13,16 +13,16 @@ overrode the settings with other TSS, XML, or JS settings:
 
 */
 
-'TabGroup': {
+'TabGroup[platform=ios]': {
 
 	// by setting both two white you get a brighter kind of white
-	backgroundColor: 'white',
+	backgroundColor: 'green',
 	tabsBackgroundColor: 'white',
 
 	tabsTintColor: Alloy.CFG.brandPrimary
 }
 
-'Tab': {
+'Tab[platform=ios]': {
 	icon: '/images/tabIcon.png'
 }
 
@@ -60,6 +60,10 @@ overrode the settings with other TSS, XML, or JS settings:
 	width: 280
 }
 
+'Picker': {
+	width: 280
+}
+
 // Make Buttons stand out a bit more on iOS
 'Button[platform=ios]': {
 	borderWidth: 1,
@@ -83,6 +87,10 @@ overrode the settings with other TSS, XML, or JS settings:
 	contentHeight: Ti.UI.SIZE,
 
 	scrollType: 'vertical'
+}
+
+'MenuItem': {
+	showAsAction: Ti.Android.SHOW_AS_ACTION_ALWAYS
 }
 
 // A vertical layout with padding

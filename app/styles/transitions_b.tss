@@ -1,0 +1,12 @@
+"Window": {
+  backgroundColor: 'white',
+
+  activityEntryTransition: Alloy.Globals.activityEntryTransition,
+  activityReturnTransition: Alloy.Globals.activityReturnTransition,
+  activitySharedElementEntryTransition: Alloy.Globals.activitySharedElementEntryTransition,
+  activitySharedElementReturnTransition: Alloy.Globals.activitySharedElementReturnTransition
+}
+
+"ImageView": {
+  width: Ti.UI.FILL
+}

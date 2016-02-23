@@ -1,5 +1,6 @@
 <Alloy>
-  <Window platform="android" title="StreetView">
+  <Window id="win" title="Google Maps StreetView">
+    <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
 
     <!-- Note the module-tag here and the position set in streetview.tss -->
     <StreetViewPanorama module="ti.map" id="streetView" />

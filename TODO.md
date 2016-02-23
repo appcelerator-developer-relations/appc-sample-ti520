@@ -22,3 +22,4 @@
 - inputType > Types: https://jira.appcelerator.org/browse/TIMOB-5817?focusedCommentId=377465&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377465
 - maxClassnames: https://jira.appcelerator.org/browse/TIMOB-20038?focusedCommentId=377520&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377520
 - Launcher doesn't work: https://jira.appcelerator.org/browse/TIMOB-19679?focusedCommentId=377634&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377634
+- Activity*Animation under wrong API: https://jira.appcelerator.org/browse/TIDOC-2454

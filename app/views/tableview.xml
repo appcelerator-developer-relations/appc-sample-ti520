@@ -1,5 +1,7 @@
 <Alloy>
-	<Window title="TableView">
+	<Window id="win" title="TableView">
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+
 		<TableView id="tableView" onClick="toggleSeparatorStyle">
 			<TableViewSection headerTitle="Help">
 				<TableViewRow title="Tap anywhere to toggle separatorStyle between Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE and Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE (default)." />
@@ -33,5 +35,6 @@
 				<TableViewRow title="Zulu" />
 			</TableViewSection>
 		</TableView>
+
 	</Window>
 </Alloy>

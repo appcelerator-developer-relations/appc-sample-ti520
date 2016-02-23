@@ -8,11 +8,20 @@ var activity;
  */
 (function constructor(args) {
 
-  // Open either the TabGroup or "Not Supported" Window depending on
+  if (Alloy.Globals.isSupported) {
+
+    if (OS_IOS) {
+      initActivity();
+    }
+
+    if (OS_ANDROID) {
+      initTabMenus();
+    }
+  }
+
+  // Opens either the TabGroup or "Not Supported" Window depending on
   // the Alloy.Globals.isSupported flag used in index.xml
   $.index.open();
-
-  initActivity();
 
 })(arguments[0] || {});
 
@@ -37,10 +46,6 @@ function onListViewItemclick(e) {
 }
 
 function initActivity() {
-
-  if (!OS_IOS || !Alloy.Globals.isSupported) {
-    return;
-  }
 
   activity = Ti.App.iOS.createUserActivity({
     activityType: 'com.appcelerator.sample.ti520.tab',
@@ -74,4 +79,20 @@ function initActivity() {
       activity.needsSave = true;
     });
   }
+}
+
+function initTabMenus() {
+
+  $.index.addEventListener('open', function(e) {
+    $.index.activity.onCreateOptionsMenu = function(e) {
+      if ($.index.activeTab.window.activity.onCreateOptionsMenu) {
+        $.index.activeTab.window.activity.onCreateOptionsMenu(e);
+      }
+    };
+  });
+
+  $.index.addEventListener('focus', function(e) {
+    $.index.activity.invalidateOptionsMenu();
+  });
+
 }

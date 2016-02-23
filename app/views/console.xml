@@ -3,6 +3,10 @@
 
 		<RightNavButton platform="ios" systemButton="TRASH" onClick="clearLogs" />
 
+		<Menu platform="android">
+			<MenuItem title="Clear" onClick="clearLogs" />
+		</Menu>
+
 		<ScrollView id="scrollView">
 			<Label id="log" />
 		</ScrollView>

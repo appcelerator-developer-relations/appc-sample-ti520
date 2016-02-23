@@ -1,0 +1,14 @@
+<Alloy>
+  <Window id="win" title="Activity Transitions (B)">
+    <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+
+    <View class="vbox">
+
+      <Label class="help">As you should have been able to see the logo from Window A transitioned to the logo on this new Window as if they were the same view.</Label>
+
+      <ImageView class="tpad" transitionName="logo" image="/images/logo.png" />
+
+    </View>
+
+  </Window>
+</Alloy>

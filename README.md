@@ -98,12 +98,11 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## Android: Window
 
-* Titanium.UI.Window.addSharedElement
-* Titanium.UI.Window.removeAllSharedElements
+http://www.androiddesignpatterns.com/2014/12/activity-fragment-transitions-in-android-lollipop-part1.html
 
-## Android: View Transitions
-
-* Titanium.UI.Android.TRANSITION_*
+* 👍 Titanium.UI.Window.addSharedElement
+* 👍 Titanium.UI.Window.removeAllSharedElements
+* 👍 Titanium.UI.Android.TRANSITION_*
 
 ## Android launcher shortcut
 

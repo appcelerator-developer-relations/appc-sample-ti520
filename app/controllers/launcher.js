@@ -1,5 +1,9 @@
 var log = require('log');
 
+function closeWindow() {
+  $.win.close();
+}
+
 function installShortcut(e) {
   var currentIntent = Ti.Android.currentActivity.getIntent();
   currentIntent.setAction(Ti.Android.ACTION_MAIN);

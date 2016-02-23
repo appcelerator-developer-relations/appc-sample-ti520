@@ -12,7 +12,8 @@
 						</ItemTemplate>
 					</Templates>
 					<ListSection>
-						<ListItem itemId="personicon" title:text="Contact Application Shortcut Icon!" subtitle:text="iOS, Force Touch" class="ios forcetouch" />
+						<ListItem itemId="transitions" title:text="Activity Transitions" subtitle:text="Android" class="android" />
+						<ListItem itemId="personicon" title:text="Application Shortcut Contact Icon" subtitle:text="iOS, Force Touch" class="ios forcetouch" />
 						<ListItem itemId="touch" title:text="Force Touch &amp; Apple Pencil" subtitle:text="iOS, Force Touch" class="ios forcetouch" />
 						<ListItem itemId="streetview" title:text="Google Maps StreetView" subtitle:text="Android" class="android device" />
 						<ListItem itemId="keyboard" title:text="Keyboard (type, appearance and returnKeyType)" subtitle:text="iOS" class="ios" />
@@ -25,9 +26,9 @@
 						<ListItem itemId="scrollview" title:text="ScrollView (scroll.contentSize)" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="tab" title:text="Tab (events and tabInsets)" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="tableview" title:text="TableView (separatorStyle)" subtitle:text="Android" class="android" />
-						<ListItem itemId="watchos" title:text="WatchOS 2 (Swift template)" subtitle:text="iOS, Watch" class="ios watch" />
+						<ListItem itemId="watchos" title:text="WatchOS 2 Swift Template" subtitle:text="iOS, Watch" class="ios watch" />
 						<ListItem itemId="window" title:text="Window (swipeToClose)" subtitle:text="iOS" class="ios" />
-						<ListItem itemId="launcher" title:text="Laucnher Shortcuts" subtitle:text="Android" class="android" />
+						<ListItem itemId="launcher" title:text="Launcher Shortcuts" subtitle:text="Android" class="android" />
 					</ListSection>
 				</ListView>
 			</Window>

@@ -1,5 +1,9 @@
+'ItemTemplate': {
+	height: 50
+}
+
 '.item[platform=ios]': {
-	left: 20
+	left: 25
 }
 
 '.item[platform=android]': {
@@ -7,13 +11,12 @@
 }
 
 '.itemTitle': {
-	top: 0,
-	color: 'black'
+	top: 0
 }
 
 '.itemSubtitle': {
-	top: 20,
-	color: 'grey'
+	top: 25,
+	color: 'gray'
 }
 
 '.ios[platform=!ios]': {

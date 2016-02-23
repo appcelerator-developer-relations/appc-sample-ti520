@@ -1,5 +1,5 @@
 <Alloy>
-	<Window title="Contact Application Shortcut Icon" onClose="onClose">
+	<Window title="Application Shortcut Contact Icon" onClose="onClose">
 		<View class="vbox">
 
 			<Label class="help">Dynamic Application Shortcut Items can now have a contact person as icon. If the contact has a photo it will be used as icon. Otherwise it will show their initials.</Label>
