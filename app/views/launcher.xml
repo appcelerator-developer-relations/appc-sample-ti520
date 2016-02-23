@@ -1,0 +1,13 @@
+<Alloy>
+	<Window title="Keyboard">
+		<ScrollView>
+			<View class="vbox">
+
+				<Label class="help">Ti.TextField.keyboardType</Label>
+
+				<Button onClick="installShortcut">Install</Button>
+
+			</View>
+		</ScrollView>
+	</Window>
+</Alloy>

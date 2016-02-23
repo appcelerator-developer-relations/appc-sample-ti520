@@ -2,6 +2,7 @@
 
 - Platform folders
 - Better filenames
+- Black TV on Android
 
 ## BUGS
 
@@ -9,7 +10,6 @@
 - 👍 e.livePhoto is null if you don't use the view API: https://jira.appcelerator.org/browse/TIMOB-19666?focusedCommentId=376729&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-376729
 - Live Photo API reference: https://jira.appcelerator.org/browse/TIDOC-2435
 - Live Photo in Alloy: https://jira.appcelerator.org/browse/ALOY-1356
-- BlurView in Alloy: https://jira.appcelerator.org/browse/ALOY-1358
 - MenuPopup in Alloy: https://jira.appcelerator.org/browse/ALOY-1357
 - 👍 Live Photo start/stop does not work well: https://jira.appcelerator.org/browse/TIMOB-19666?focusedCommentId=376882&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-376882
 - ProgressBar min/max: https://jira.appcelerator.org/browse/TIMOB-20403
@@ -20,3 +20,5 @@
 - StreetView does not work in emulator: https://jira.appcelerator.org/browse/TIMOB-19751?focusedCommentId=377445&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377445
 - inputType for TextArea: https://jira.appcelerator.org/browse/TIMOB-5817?focusedCommentId=377458&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377458
 - inputType > Types: https://jira.appcelerator.org/browse/TIMOB-5817?focusedCommentId=377465&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377465
+- maxClassnames: https://jira.appcelerator.org/browse/TIMOB-20038?focusedCommentId=377520&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377520
+- Launcher doesn't work: https://jira.appcelerator.org/browse/TIMOB-19679?focusedCommentId=377634&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-377634

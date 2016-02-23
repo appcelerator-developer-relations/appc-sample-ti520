@@ -34,11 +34,13 @@
 		</ScrollView>
 	</Window>
 
-	<MenuPopup id="menu">
+	<!-- FIXME: https://jira.appcelerator.org/browse/ALOY-1357
+	<MenuPopup id="menu" onClick="onMenuPopupClick">
 		<Items>
 			<Item>Option A</Item>
 			<Item>Option B</Item>
 		</Items>
 	</MenuPopup>
+	-->
 
 </Alloy>

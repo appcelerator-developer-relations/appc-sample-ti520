@@ -1,0 +1,37 @@
+<Alloy>
+	<Window title="TableView">
+		<TableView id="tableView" onClick="toggleSeparatorStyle">
+			<TableViewSection headerTitle="Help">
+				<TableViewRow title="Tap anywhere to toggle separatorStyle between Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE and Ti.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE (default)." />
+			</TableViewSection>
+			<TableViewSection headerTitle="Alphabet">
+				<TableViewRow title="Appcelerator" />
+				<TableViewRow title="Bravo" />
+				<TableViewRow title="Charlie" />
+				<TableViewRow title="Delta" />
+				<TableViewRow title="Echo" />
+				<TableViewRow title="Foxtrot" />
+				<TableViewRow title="Golf" />
+				<TableViewRow title="Hyperloop" />
+				<TableViewRow title="India" />
+				<TableViewRow title="Juliett" />
+				<TableViewRow title="Kilo" />
+				<TableViewRow title="Lima" />
+				<TableViewRow title="Mike" />
+				<TableViewRow title="November" />
+				<TableViewRow title="Oscar" />
+				<TableViewRow title="Papa" />
+				<TableViewRow title="Quebec" />
+				<TableViewRow title="Romeo" />
+				<TableViewRow title="Sierra" />
+				<TableViewRow title="Titanium" />
+				<TableViewRow title="Uniform" />
+				<TableViewRow title="Victor" />
+				<TableViewRow title="Whiskey" />
+				<TableViewRow title="X-ray" />
+				<TableViewRow title="Yankee" />
+				<TableViewRow title="Zulu" />
+			</TableViewSection>
+		</TableView>
+	</Window>
+</Alloy>

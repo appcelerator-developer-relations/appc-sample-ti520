@@ -72,6 +72,10 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 * 👍 Default
 
+# UserActivity needsSave
+
+* https://jira.appcelerator.org/browse/TIMOB-19567
+
 ----------------------
 
 ## Ti.Map StreetView
@@ -80,7 +84,17 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 
 ## Android: TextField
 
-* Titanium.UI.TextField.inputType
+* 👍 Titanium.UI.TextField.inputType
+
+## Android: TableView
+
+* 👍 Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
+* 👍 Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE
+* ?? Titanium.UI.TableView.maxClassname
+
+## Android: Soft Navigation Bar
+
+* 👍 `<fullscreen>true</fullscreen>`
 
 ## Android: Window
 
@@ -90,16 +104,6 @@ For a full list of changes see the [Release Notes](http://docs.appcelerator.com/
 ## Android: View Transitions
 
 * Titanium.UI.Android.TRANSITION_*
-
-## Android: TableView
-
-* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_NONE
-* Titanium.UI.TABLE_VIEW_SEPARATOR_STYLE_SINGLE_LINE
-* Titanium.UI.TableView.maxClassname
-
-## Android: Soft Navigation Bar
-
-* `<fullscreen>true</fullscreen>`
 
 ## Android launcher shortcut
 

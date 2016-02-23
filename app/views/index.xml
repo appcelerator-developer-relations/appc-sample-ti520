@@ -24,8 +24,10 @@
 						<ListItem itemId="progressbar" title:text="Progress Bar (trackTintColor)" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="scrollview" title:text="ScrollView (scroll.contentSize)" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="tab" title:text="Tab (events and tabInsets)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="tableview" title:text="TableView (separatorStyle)" subtitle:text="Android" class="android" />
 						<ListItem itemId="watchos" title:text="WatchOS 2 (Swift template)" subtitle:text="iOS, Watch" class="ios watch" />
 						<ListItem itemId="window" title:text="Window (swipeToClose)" subtitle:text="iOS" class="ios" />
+						<ListItem itemId="launcher" title:text="Laucnher Shortcuts" subtitle:text="Android" class="android" />
 					</ListSection>
 				</ListView>
 			</Window>
