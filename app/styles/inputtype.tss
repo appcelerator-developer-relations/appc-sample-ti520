@@ -1,0 +1,3 @@
+'Window': {
+  windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_STATE_HIDDEN
+}

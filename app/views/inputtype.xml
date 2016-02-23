@@ -1,5 +1,7 @@
 <Alloy>
-	<Window title="Keyboard">
+	<Window id="win" title="Keyboard">
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
+
 		<ScrollView>
 			<View class="vbox">
 
@@ -14,5 +16,6 @@
 
 			</View>
 		</ScrollView>
+
 	</Window>
 </Alloy>

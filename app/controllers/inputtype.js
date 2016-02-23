@@ -1,5 +1,9 @@
 var log = require('log');
 
+function closeWindow() {
+  $.win.close();
+}
+
 function setInputType() {
   var names = [];
   var inputType = [];
