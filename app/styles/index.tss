@@ -2,8 +2,12 @@
 	height: 50
 }
 
+'.item': {
+	height: 25
+}
+
 '.item[platform=ios]': {
-	left: 25
+	left: 15
 }
 
 '.item[platform=android]': {

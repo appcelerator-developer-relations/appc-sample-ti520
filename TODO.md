@@ -2,7 +2,6 @@
 
 - Platform folders
 - Better filenames
-- Black TV on Android
 
 ## BUGS
 
