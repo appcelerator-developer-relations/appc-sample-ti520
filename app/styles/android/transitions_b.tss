@@ -4,9 +4,9 @@
   // See the XML for the descriptions
   // These are creation-only so we use Alloy.Globals to make them configurable
   // FIXME: https://jira.appcelerator.org/browse/ALOY-1316
-  activityEntryTransition: Alloy.Globals.activityEntryTransition,
+  activityEnterTransition: Alloy.Globals.activityEnterTransition,
   activityReturnTransition: Alloy.Globals.activityReturnTransition,
-  activitySharedElementEntryTransition: Alloy.Globals.activitySharedElementEntryTransition,
+  activitySharedElementEnterTransition: Alloy.Globals.activitySharedElementEnterTransition,
   activitySharedElementReturnTransition: Alloy.Globals.activitySharedElementReturnTransition
 }
 

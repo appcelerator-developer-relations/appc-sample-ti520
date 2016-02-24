@@ -46,12 +46,19 @@
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
             <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
+            <Row title="TRANSITION_EXPLODE"/>
+            <Row title="TRANSITION_FADE_IN"/>
+            <Row title="TRANSITION_FADE_OUT"/>
+            <Row title="TRANSITION_SLIDE_TOP"/>
+            <Row title="TRANSITION_SLIDE_RIGHT"/>
+            <Row title="TRANSITION_SLIDE_BOTTOM"/>
+            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_NONE"/>
           </Column>
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementReenterTransition</Label>
-        <Label class="help">Additional transition after the shared logo has transitioned back from Window B to Window A. Defaults to it exit-transition.</Label>
+        <Label class="help">Additional transition after the shared logo has transitioned back from Window B to Window A. Defaults to its exit-transition.</Label>
         <Picker id="activitySharedElementReenterTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
@@ -59,6 +66,13 @@
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
             <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
+            <Row title="TRANSITION_EXPLODE"/>
+            <Row title="TRANSITION_FADE_IN"/>
+            <Row title="TRANSITION_FADE_OUT"/>
+            <Row title="TRANSITION_SLIDE_TOP"/>
+            <Row title="TRANSITION_SLIDE_RIGHT"/>
+            <Row title="TRANSITION_SLIDE_BOTTOM"/>
+            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_NONE"/>
           </Column>
         </Picker>

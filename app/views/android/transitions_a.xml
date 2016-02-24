@@ -38,7 +38,7 @@
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementEnterTransition</Label>
-        <Label class="help">How the shared logo transitions from Window A to Window B.</Label>
+        <Label class="help">How the shared logo transitions from Window A to Window B. Defaults to TRANSITION_CHANGE_BOUNDS.</Label>
         <Picker id="activitySharedElementEnterTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
@@ -46,12 +46,19 @@
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
             <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
+            <Row title="TRANSITION_EXPLODE"/>
+            <Row title="TRANSITION_FADE_IN"/>
+            <Row title="TRANSITION_FADE_OUT"/>
+            <Row title="TRANSITION_SLIDE_TOP"/>
+            <Row title="TRANSITION_SLIDE_RIGHT"/>
+            <Row title="TRANSITION_SLIDE_BOTTOM"/>
+            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_NONE"/>
           </Column>
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementReturnTransition</Label>
-        <Label class="help">How the shared logo transitions from Window B back to Window A. Defaults to it enter-transition.</Label>
+        <Label class="help">How the shared logo transitions from Window B back to Window A. Defaults to its enter-transition.</Label>
         <Picker id="activitySharedElementReturnTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
@@ -59,6 +66,13 @@
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
             <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
+            <Row title="TRANSITION_EXPLODE"/>
+            <Row title="TRANSITION_FADE_IN"/>
+            <Row title="TRANSITION_FADE_OUT"/>
+            <Row title="TRANSITION_SLIDE_TOP"/>
+            <Row title="TRANSITION_SLIDE_RIGHT"/>
+            <Row title="TRANSITION_SLIDE_BOTTOM"/>
+            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_NONE"/>
           </Column>
         </Picker>
