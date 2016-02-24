@@ -3,14 +3,17 @@
   // See the XML for the descriptions
   // These are creation-only so we use Alloy.Globals to make them configurable
   // FIXME: https://jira.appcelerator.org/browse/ALOY-1316
-  activityExitTransition: Alloy.Globals.activityExitTransition,
-  activityReenterTransition: Alloy.Globals.activityReenterTransition,
+  /*activityExitTransition: Alloy.Globals.activityExitTransition,*/
+  /*activityReenterTransition: Alloy.Globals.activityReenterTransition,*/
+
+  activityExitTransition: Titanium.UI.Android.TRANSITION_NONE,
+    activityReenterTransition: Titanium.UI.Android.TRANSITION_NONE,
+
   activitySharedElementExitTransition: Alloy.Globals.activitySharedElementExitTransition,
   activitySharedElementReenterTransition: Alloy.Globals.activitySharedElementReenterTransition
 }
 
 'ImageView': {
   width: 50,
-  backgroundColor: 'white',
-  borderRadius: 5
+  backgroundColor: 'white'
 }

@@ -1,5 +1,4 @@
 'Window': {
-  backgroundColor: 'white',
 
   // See the XML for the descriptions
   // These are creation-only so we use Alloy.Globals to make them configurable
@@ -11,5 +10,6 @@
 }
 
 'ImageView': {
-  width: Ti.UI.FILL
+  width: Ti.UI.FILL,
+  backgroundColor: 'white'
 }

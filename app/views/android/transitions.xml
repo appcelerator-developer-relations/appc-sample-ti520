@@ -38,7 +38,7 @@
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementExitTransition</Label>
-        <Label class="help">Additional transition before the shared logo transitions from Window A to Window B.</Label>
+        <Label class="help">Additional transition before the shared logo transitions from Window A to Window B. Notice that none of the currently exposed transitions would be noticeable.</Label>
         <Picker id="activitySharedElementExitTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
@@ -46,19 +46,12 @@
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
             <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
-            <Row title="TRANSITION_EXPLODE"/>
-            <Row title="TRANSITION_FADE_IN"/>
-            <Row title="TRANSITION_FADE_OUT"/>
-            <Row title="TRANSITION_SLIDE_TOP"/>
-            <Row title="TRANSITION_SLIDE_RIGHT"/>
-            <Row title="TRANSITION_SLIDE_BOTTOM"/>
-            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_NONE"/>
           </Column>
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementReenterTransition</Label>
-        <Label class="help">Additional transition after the shared logo has transitioned back from Window B to Window A. Defaults to its exit-transition.</Label>
+        <Label class="help">Additional transition after the shared logo has transitioned back from Window B to Window A. Defaults to its exit-transition.  Notice that none of the currently exposed transitions would be noticeable.</Label>
         <Picker id="activitySharedElementReenterTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
@@ -66,13 +59,6 @@
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
             <Row title="TRANSITION_CHANGE_IMAGE_TRANSFORM"/>
-            <Row title="TRANSITION_EXPLODE"/>
-            <Row title="TRANSITION_FADE_IN"/>
-            <Row title="TRANSITION_FADE_OUT"/>
-            <Row title="TRANSITION_SLIDE_TOP"/>
-            <Row title="TRANSITION_SLIDE_RIGHT"/>
-            <Row title="TRANSITION_SLIDE_BOTTOM"/>
-            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_NONE"/>
           </Column>
         </Picker>

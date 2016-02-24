@@ -6,7 +6,7 @@
 
       <ImageView transitionName="logo" image="/images/logo.png" />
 
-      <Label class="help tpad" transitionName="text">As you should have been able to see the logo and this label transition from Window A to this new Window as if they were the same.</Label>
+      <Label class="help tpad" transitionName="text">As you should have been able to see the logo and this label transition from Window A to this new Window as if they were the same. Use the system navigation bar back button to close this window. The level up indicator in the Action Bar does not honour activityReturnTransition.</Label>
 
     </View>
 
