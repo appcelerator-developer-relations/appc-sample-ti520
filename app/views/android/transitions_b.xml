@@ -4,9 +4,9 @@
 
     <View class="vbox">
 
-      <Label class="help">As you should have been able to see the logo from Window A transitioned to the logo on this new Window as if they were the same view.</Label>
+      <ImageView transitionName="logo" image="/images/logo.png" />
 
-      <ImageView class="tpad" transitionName="logo" image="/images/logo.png" />
+      <Label class="help tpad" transitionName="text">As you should have been able to see the logo and this label transition from Window A to this new Window as if they were the same.</Label>
 
     </View>
 

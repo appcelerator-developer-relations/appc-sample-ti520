@@ -28,6 +28,7 @@ function openWindowB() {
 
   // Link shared elements using the transitionName also set in both XML files
   win.addSharedElement($.logo, 'logo');
+  win.addSharedElement($.text, 'text');
 
   // Open the Window
   win.open();

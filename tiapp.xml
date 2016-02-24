@@ -101,6 +101,10 @@
         <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyB1ATGRrby9stkKxvdl3SBYxSVB5Kkm7yM"/>
 
       </application>
+
+      <!-- Required to install a launcher shortcut -->
+      <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
     </manifest>
   </android>
   <modules>

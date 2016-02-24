@@ -2,15 +2,16 @@
 	<Window id="win" title="Launcher Shortcuts">
 		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
 
-		<ScrollView>
-			<View class="vbox">
+		<View class="vbox">
 
-				<Label class="help">Ti.TextField.keyboardType</Label>
+			<Label class="help">Ti.Android.Intent.putExtra() now accepts Intents and Images. This allows you to create an additional Launch Shortcut. Click to install a shortcut that will directly take you to this sample.</Label>
 
-				<Button onClick="installShortcut">Install</Button>
+			<Button class="tpad" onClick="installShortcut">Install Shortcut</Button>
 
-			</View>
-		</ScrollView>
+			<Label class="help tpad">The app was launched via the additional shortcut:</Label>
+			<Label id="feedback" class="help" />
+
+		</View>
 
 	</Window>
 </Alloy>

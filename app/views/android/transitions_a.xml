@@ -42,13 +42,6 @@
         <Picker id="activitySharedElementEnterTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
-            <Row title="TRANSITION_EXPLODE"/>
-            <Row title="TRANSITION_FADE_IN"/>
-            <Row title="TRANSITION_FADE_OUT"/>
-            <Row title="TRANSITION_SLIDE_TOP"/>
-            <Row title="TRANSITION_SLIDE_RIGHT"/>
-            <Row title="TRANSITION_SLIDE_BOTTOM"/>
-            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_CHANGE_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
@@ -62,13 +55,6 @@
         <Picker id="activitySharedElementReturnTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
-            <Row title="TRANSITION_EXPLODE"/>
-            <Row title="TRANSITION_FADE_IN"/>
-            <Row title="TRANSITION_FADE_OUT"/>
-            <Row title="TRANSITION_SLIDE_TOP"/>
-            <Row title="TRANSITION_SLIDE_RIGHT"/>
-            <Row title="TRANSITION_SLIDE_BOTTOM"/>
-            <Row title="TRANSITION_SLIDE_LEFT"/>
             <Row title="TRANSITION_CHANGE_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_CLIP_BOUNDS"/>
             <Row title="TRANSITION_CHANGE_TRANSFORM"/>
@@ -78,6 +64,7 @@
         </Picker>
 
         <ImageView id="logo" class="tpad" transitionName="logo" image="/images/logo.png" />
+        <Label id="text" class="help tpad-s" transitionName="text">Tap the button and see the logo and this text transition from this Window to the next.</Label>
 
         <Button class="tpad" onClick="openWindowB">Open Window B</Button>
 

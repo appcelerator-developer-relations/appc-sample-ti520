@@ -18,7 +18,7 @@
 						<ListItem itemId="streetview" title:text="Google Maps StreetView" subtitle:text="Android" class="android device" />
 						<ListItem itemId="keyboard" title:text="Keyboard (type, appearance and returnKeyType)" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="keyboard" title:text="Keyboard (inputType)" subtitle:text="Android" class="android" />
-						<!-- <ListItem itemId="launcher" title:text="Launcher Shortcuts" subtitle:text="Android" class="android" /> -->
+						<ListItem itemId="launcher" title:text="Launcher Shortcuts" subtitle:text="Android" class="android" />
 						<ListItem itemId="listview" title:text="ListView (events and canInsert)" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="livephoto" title:text="Live Photo" subtitle:text="iOS" class="ios" />
 						<ListItem itemId="menupopup" title:text="MenuPopup" subtitle:text="iOS" class="ios" />

@@ -16,23 +16,18 @@ var activity;
 
     if (OS_ANDROID) {
       initTabMenus();
+      initShortcut();
     }
   }
 
-  // To make it easier to see the full-screen splash screen on Android
-  if (OS_ANDROID) {
+  // Wait a bit to make it easier to see fullscreen and storyboard changes
+  setTimeout(function() {
 
-    setTimeout(function() {
-
-      // Opens either the TabGroup or "Not Supported" Window depending on
-      // the Alloy.Globals.isSupported flag used in index.xml
-      $.index.open();
-
-    }, 3000);
-
-  } else {
+    // Opens either the TabGroup or "Not Supported" Window depending on
+    // the Alloy.Globals.isSupported flag used in index.xml
     $.index.open();
-  }
+
+  }, 2000);
 
 })(arguments[0] || {});
 
@@ -44,15 +39,19 @@ function onListViewItemclick(e) {
     return alert('Your device does not meet the requirements for this example.');
   }
 
-  var controllerSrc = e.itemId;
+  var controllerName = e.itemId;
 
   // Special case. We want to list the Tab sample but it should select the middle tab.
-  if (controllerSrc === 'tab') {
+  if (controllerName === 'tab') {
     $.index.tabs[1].active = true;
     return;
   }
 
-  var controller = Alloy.createController(controllerSrc);
+  openSample(controllerName);
+}
+
+function openSample(controllerName) {
+  var controller = Alloy.createController(controllerName);
 
   $.samplesTab.open(controller.getView());
 }
@@ -104,6 +103,10 @@ function initTabMenus() {
 
   $.index.addEventListener('open', function(e) {
 
+    $.index.activity.addEventListener('newintent', function(e) {
+      console.log('newintent from index.js added to tabgroup activity ' + JSON.stringify(e));
+    });
+
     $.index.activity.onCreateOptionsMenu = function(e) {
 
       // Delegate the creation of the menu to the active tab
@@ -121,4 +124,18 @@ function initTabMenus() {
     $.index.activity.invalidateOptionsMenu();
   });
 
+}
+
+// Android: Launch the app via an additional shortcut to a sample (see launcher.js)
+function initShortcut() {
+  var sample = Ti.App.Android.launchIntent.getStringExtra('sample');
+
+  // If we were launched using a shortcut to a specific sample
+  if (sample) {
+
+    // Wait for the TabGroup to be open
+    $.index.addEventListener('open', function(e) {
+      openSample(sample);
+    });
+  }
 }
