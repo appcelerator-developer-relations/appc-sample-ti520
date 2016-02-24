@@ -2,7 +2,9 @@
 
 > **NOTE:** This Sample App requires Titanium 5.2.0 and Alloy 1.7.33. It supports Android 4.x and iOS 9.x. Some examples might be available on selective platforms or devices.
 
-The [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relations/appc-sample-ti520) demonstrates most of the 34 new features in Titanium 5.2.0, including:
+![screenshots](docs/screenshots.png)
+
+This sample demonstrates many of the 34 new features in Titanium 5.2.0, including:
 
 * Live Photo View
 * Menu Popup
@@ -12,7 +14,7 @@ The [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relati
 * Android View Transitions
 * Google Maps StreetViewPanorama
 
-For more information on this release see the [official announcement](http://www.appcelerator.com/blog/2016/02/ga-release-of-cli-5-2-titanium-5-2-and-studio-4-5/), which also links the release notes and full list of closed tickets.
+For more information on Titanium 5.2.0 see the [official announcement](http://www.appcelerator.com/blog/2016/02/ga-release-of-cli-5-2-titanium-5-2-and-studio-4-5/), which also links the release notes and full list of closed tickets.
 
 ## Walkthroughs
 
