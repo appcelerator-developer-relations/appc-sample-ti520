@@ -32,28 +32,4 @@ var log = require('log');
   Alloy.Globals.isForceTouchSupported = (OS_IOS && Ti.UI.iOS.forceTouchSupported);
   Alloy.Globals.isWatchSupported = (OS_IOS && Ti.WatchSession.isSupported);
 
-  if (OS_IOS && Alloy.isTablet) {
-
-    // This event fires when the app was still active in the background when it Slides Over another app
-    Ti.App.addEventListener('resume', function(e) {
-      log.args('Ti.App:resume', e);
-    });
-
-    // Will (also) fires when:
-    // 1) This app Slides Over another app
-    // 2) This app goes from Slide Over to Split View
-    // 3) This app goes from quarter to half Split View or visa versa
-    // 4) The Split View devider is dragged but bounces back to existing mode
-    // 5) This app goes from Split View to full view by dragging the devider to the left edge
-    // 6) This app goes from Split View to Slide Over (via singletap on devider)
-    // 7) Another app that was Slide Over this app goes to Split View
-    //
-    // It does not fire when:
-    // 1) This app goes from Split View back full view because the other app goes back from Split View to Slide Over (via singletap on devider)
-    Ti.App.addEventListener('resumed', function(e) {
-      log.args('Ti.App:resumed', e);
-    });
-
-  }
-
 })(this);
