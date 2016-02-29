@@ -2,7 +2,7 @@
 
 > **NOTE:** This Sample App requires Titanium 5.2.0 and Alloy 1.7.33. It supports Android 4.x and iOS 9.x. Some examples might be available on selective platforms or devices.
 
-![screenshots](docs/screenshots.png)
+![screenshots](docs/assets/screenshots.png)
 
 This sample demonstrates many of the 34 new features in Titanium 5.2.0, including:
 
