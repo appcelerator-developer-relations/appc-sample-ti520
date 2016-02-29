@@ -21,3 +21,4 @@ For more information on Titanium 5.2.0 see the [official announcement](http://ww
 In the comings days I will publish walkthroughs on some of the main features in this example. The examples and code itself should be fairly self explanatory though.
 
 * [Launch Files, iPad Pro, Slide Over and Split View](docs/launchfiles.md)
+* [Live Photos](docs/livephotos.md)

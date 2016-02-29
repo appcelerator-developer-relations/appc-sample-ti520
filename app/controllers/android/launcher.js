@@ -22,6 +22,7 @@ function installShortcut(e) {
 
   // Re-set the action to have the intent be the app entry point
   intentForShortcut.action = Ti.Android.ACTION_MAIN;
+  intentForShortcut.addFlags(Ti.Android.FLAG_ACTIVITY_SINGLE_TOP);
 
   // Add custom metadata to read when the app is launched from the shortcut.
   // See index.js to see how we use this to directly open the launcher sample.
