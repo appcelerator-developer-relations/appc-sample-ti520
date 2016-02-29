@@ -2,7 +2,7 @@
 
 Titanium 5.2.0 has added support for [Live Photos](http://www.apple.com/iphone-6s/films/index.html#film-live-photos) that Apple [introduced with iOS 9.1](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9_1.html) for the [iPhone 6s](http://www.apple.com/iphone-6s/cameras/). It allows you to select existing Live Photos and display them:
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/XAxrq1hq7JA" frameborder="0" allowfullscreen></iframe>
+[![video](http://img.youtube.com/vi/XAxrq1hq7JA/0.jpg)](https://www.youtube.com/embed/XAxrq1hq7JA)
 
 #### Capturing a Live Photo
 Although Apple's [Reference](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIImagePickerController_Class/index.html#//apple_ref/doc/uid/TP40007070-CH3-DontLinkElementID_2) isn't really clear about it does say:
