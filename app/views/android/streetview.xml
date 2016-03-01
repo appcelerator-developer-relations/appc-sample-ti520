@@ -1,5 +1,5 @@
 <Alloy>
-  <Window id="win" title="Google Maps StreetView">
+  <Window id="win" title="Google Street View Panorama">
     <ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeWindow" />
 
     <!-- Note the module-tag here and the position set in streetview.tss -->

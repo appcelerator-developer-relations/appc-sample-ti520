@@ -1,6 +1,8 @@
 ### Titanium 5.2.0: iOS Live Photos
 
-Titanium 5.2.0 has added support for [Live Photos](http://www.apple.com/iphone-6s/films/index.html#film-live-photos) that Apple [introduced with iOS 9.1](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9_1.html) for the [iPhone 6s](http://www.apple.com/iphone-6s/cameras/). It allows you to select existing Live Photos and display them:
+[Titanium 5.2.0](http://www.appcelerator.com/blog/2016/02/ga-release-of-cli-5-2-titanium-5-2-and-studio-4-5/) has added support for [Live Photos](http://www.apple.com/iphone-6s/films/index.html#film-live-photos) that Apple [introduced with iOS 9.1](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9_1.html) for the [iPhone 6s](http://www.apple.com/iphone-6s/cameras/). It allows you to select existing Live Photos and display them.
+
+In this blog post I'll walk you through all of this using the new [Titanium 5.2.0 Sample App](http://github.com/appcelerator-developer-relations/appc-sample-ti520):
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/XAxrq1hq7JA" frameborder="0" allowfullscreen></iframe>
 

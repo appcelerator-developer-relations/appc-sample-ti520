@@ -1,8 +1,8 @@
 ### Titanium 5.2.0: Launch Files, iPad Pro, Slide Over and Split View
 
-With iOS 9 Apple introduced [Slide Over and Split View](https://developer.apple.com/library/prerelease/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForSlideOverAndSplitView.html) for multitasking on eligible iPad models. You can now enable these new features for your apps in Titanium 5.2.0.
+With iOS 9 Apple introduced [Slide Over and Split View](https://developer.apple.com/library/prerelease/ios/documentation/WindowsViews/Conceptual/AdoptingMultitaskingOniPad/QuickStartForSlideOverAndSplitView.html) for multitasking on eligible iPad models. You can now enable these new features for your apps in [Titanium 5.2.0](http://www.appcelerator.com/blog/2016/02/ga-release-of-cli-5-2-titanium-5-2-and-studio-4-5/).
 
-In this blog post I'll walk you through all of this using the new [Titanium 5.2.0 Sample App](https://github.com/appcelerator-developer-relations/appc-sample-ti520):
+In this blog post I'll walk you through all of this using the new [Titanium 5.2.0 Sample App](http://github.com/appcelerator-developer-relations/appc-sample-ti520):
 
 [![Split View](assets/splitview.png)](https://github.com/appcelerator-developer-relations/appc-sample-ti520)
 
