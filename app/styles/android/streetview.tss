@@ -1,4 +1,4 @@
-'StreetViewPanorama': {
+'#streetView': {
 
 	// We can set the position (but not the heading)
 	position: {
