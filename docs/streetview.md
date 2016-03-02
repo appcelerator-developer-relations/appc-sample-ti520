@@ -66,4 +66,16 @@ There are a few features you can disable. All of them are on by default. In the 
 * `zoom`: Determines whether the user will be able to pinch to zoom.
 * `streetNames`: Determines whether the user is able to see street names displayed on the ground.
 
+#### Run on Android Device or Emulator
+
+To use Google Maps the device or emulator needs to have [Google Play Services](https://developers.google.com/android/guides/overview) installed. This comes - and is silently updated - with the Google Play app that you will find on pretty much any Android device.
+
+Unfortunately, the popular [Genymotion](https://www.genymotion.com/) emulator [comes without Google Apps](https://www.genymotion.com/faq/#google-apps-missing) because of a legal dispute with Google. You can find instructions on how to add Google Apps to Genymotion emulators on [Google](https://www.google.com/search?q=genymotion%20google%20apps).
+
+However, you might also consider giving the stock AVDs (Android Virtual Device) another try. Most of them include Google APIs, the performance has improved a lot recently and [Android Studio](http://developer.android.com/sdk/index.html) makes it very easy to [manage AVDs](http://developer.android.com/tools/devices/managing-avds.html) for tons of common devices:</p>
+
+![AVD](https://raw.githubusercontent.com/appcelerator-developer-relations/appc-sample-ti520/master/docs/assets/avd.png)
+
+And yes, these AVDs work fine with Titanium!
+
 Code Strong! 🚀
