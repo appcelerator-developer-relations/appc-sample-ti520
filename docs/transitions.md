@@ -89,7 +89,12 @@ The constants you can use for these transitions are:
 Now how do we put these properties and constants into use and actually define shared elements?
 
 1. In both Windows we need to set the new [transitionName](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.View-property-transitionName) property to the same value for each shared element. You can see we've done this in [Window A](app/views/android/transitions_a.xml#L66-L67) and [Window B](app/views/android/transitions_b.xml#L7-L9) of our Sample App. The name should be unique within each Window.
-2. Before we open Window B we then need to use its new [addSharedElement()](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Window-method-addSharedElement) method. This method takes two properties. The first should be a reference to the shared view in Window A. The second is the value of `transitionName` as it can be found in Window B. Sounds confusing? Have a look at the Sample's [transition_a.js](app/controllers/android/transitions_a.js#L30-L31) controller.
+2. Before we open Window B we then need to use its new [addSharedElement()](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Window-method-addSharedElement) method. This method takes two properties. The first should be a reference to the shared view in Window A. The second is the value of `transitionName` as it can be found in Window B. Sounds confusing? Have a look at the Sample's [transition_a.js](app/controllers/android/transitions_a.js#L30-L31) controller:
+
+```
+win.addSharedElement($.logo, 'logo');
+win.addSharedElement($.text, 'text');
+```
 
 Let's make some truly *animating* Titanium Android apps!
 
