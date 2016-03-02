@@ -28,19 +28,19 @@ You can select the iPad Pro from the device list in Studio or use `-C ?` to sele
 
 You have two ways to use Launch Files: by using our builtin Storyboard or your own.
 
-Both need to be enabled in the `<ios>` section of your [tiapp.xml](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L28):
+Both need to be enabled in the `<ios>` section of your [tiapp.xml](tiapp.xml#L28):
 
 	<enable-launch-screen-storyboard>true</enable-launch-screen-storyboard>
 
 #### Option A: Use the builtin Storyboard
 
-The builtin Storyboard features a centered image on a solid background color. The sample uses the builtin storyboard with a [custom image](https://github.com/appcelerator-developer-relations/appc-sample-ti520/tree/master/app/assets/iphone) on an [Appcelerator red Background Color](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L31):
+The builtin Storyboard features a centered image on a solid background color. The sample uses the builtin storyboard with a [custom image](app/assets/iphone) on an [Appcelerator red Background Color](tiapp.xml#L31):
 
 ![Builtin Storyboard](assets/launch-builtin.png)
 
 ##### Customising the Image
 
-By default we'll generate the image from `DefaultIcon[-ios].png`. To use a different image, add the following `LaunchLogo*.png` files to the [app/assets/iphone](https://github.com/appcelerator-developer-relations/appc-sample-ti520/tree/master/app/assets/iphone) folder:
+By default we'll generate the image from `DefaultIcon[-ios].png`. To use a different image, add the following `LaunchLogo*.png` files to the [app/assets/iphone](app/assets/iphone) folder:
 
 Filename | Devices | Scale | Recommended Size
 ---------|---------|-------|-----------------
@@ -54,9 +54,9 @@ You can generate these images with TiCons [Web](http://ticons.fokkezb.nl/) or [C
 
 ##### Customising the Background Color
 
-By default the background color is white. You can set a different color via the `<ios>` section of your [tiapp.xml](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L31).
+By default the background color is white. You can set a different color via the `<ios>` section of your [tiapp.xml](tiapp.xml#L31).
 
-This will also change the background color of your app between after the launch files is dismissed and before a view (with a solid background color) is opened, or [Ti.UI.backgroundColor](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI-property-backgroundColor) is set. The sample [opens with a 2s delay](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/controllers/index.js#L23-L30) so you can see this better.
+This will also change the background color of your app between after the launch files is dismissed and before a view (with a solid background color) is opened, or [Ti.UI.backgroundColor](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI-property-backgroundColor) is set. The sample [opens with a 2s delay](app/controllers/index.js#L23-L30) so you can see this better.
 
 #### Option B: Use a custom Storyboard
 
@@ -95,11 +95,11 @@ On to iPad multitasking.
 
 The reason this requires Launch Files is that your app might be opened as Slide Over in either landscape or portrait. This would have required a 6 more launch images for the 3 sizes of iPad screens out there.
 
-Because your app needs to deal with all these sizes as well, Auto Layout is required. So the first thing we need to do is enable this under the `<ios>` section of [tiapp.xml](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L34):
+Because your app needs to deal with all these sizes as well, Auto Layout is required. So the first thing we need to do is enable this under the `<ios>` section of [tiapp.xml](tiapp.xml#L34):
 
 	<use-auto-layout>true</use-auto-layout>
 	
-To inform iOS that our app no longer requires fullscreen, we need to add a flag to the `<ios><plist><dict>` section of [tiapp.xml](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L40-L41):
+To inform iOS that our app no longer requires fullscreen, we need to add a flag to the `<ios><plist><dict>` section of [tiapp.xml](tiapp.xml#L40-L41):
 
 	<key>UIRequiresFullScreen</key>
 	<false/>
@@ -110,4 +110,4 @@ Though Auto Layout should take care of resizing your UI properly, you might want
 
 To respond to your app changing between full screen, Slide Over and quarter or half Split View you can listen to the existing [Ti.App:resumed](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.App-event-resumed) event. This will fire on all occasions [except for one](https://jira.appcelerator.org/browse/TIMOB-20461). When your app is on the left side of a Split View and moves back to fullscreen because the other app closes or switches to Slide Over you will not get notified.
 
-In [index controller](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/controllers/index.js#L105) of the sample app I log the dimensions of the TabGroup each time the `resumed` event is received.
+In [index controller](app/controllers/index.js#L105) of the sample app I log the dimensions of the TabGroup each time the `resumed` event is received.

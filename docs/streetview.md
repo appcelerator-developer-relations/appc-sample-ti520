@@ -10,7 +10,7 @@ In this blog post I'll walk you through all of this using the new [Titanium 5.2.
 
 #### Add the Maps Module
 
-Since the module is bundled with the Titanium SDK you don't need to download it. You do need to add it to your [tiapp.xml](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L112-L113):
+Since the module is bundled with the Titanium SDK you don't need to download it. You do need to add it to your [tiapp.xml](tiapp.xml#L112-L113):
 
 	<modules>
 		<module platform="android">ti.map</module>
@@ -32,11 +32,11 @@ Google requires you to [request an API key](http://docs.appcelerator.com/platfor
 		</manifest>
 	</android>
 
-The Sample App has an [API key configured](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/tiapp.xml#L101) that is valid for its App ID and our [builtin development keystore](https://github.com/appcelerator/titanium_mobile/blob/master/support/android/dev_keystore).
+The Sample App has an [API key configured](tiapp.xml#L101) that is valid for its App ID and our [builtin development keystore](https://github.com/appcelerator/titanium_mobile/blob/master/support/android/dev_keystore).
 
 #### Add the StreetViewPanorama
 
-To add the new StreetViewPanorama we have used Alloy's `module` attribute in the [streetview.xml](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/views/android/streetview.xml#L6) view:
+To add the new StreetViewPanorama we have used Alloy's `module` attribute in the [streetview.xml](app/views/android/streetview.xml#L6) view:
 
 	<StreetViewPanorama module="ti.map" id="streetView" />
 
@@ -47,7 +47,7 @@ You should know that Alloy normally transpiles `<Foo>` elements to `Ti.UI.create
 The [API reference](http://docs.appcelerator.com/platform/latest/#!/api/Modules.Map) for the StreetViewPanorama is currently [missing](https://jira.appcelerator.org/browse/TIDOC-2450). Luckily there's just a few properties and the samples shows you all of them.
 
 ##### Set the location
-First of all we need to set the position. We use the ID we've assigned the tag in the above XML view to set the position in [streetview.tss](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/styles/android/streetview.tss#L1-L8):
+First of all we need to set the position. We use the ID we've assigned the tag in the above XML view to set the position in [streetview.tss](app/styles/android/streetview.tss#L1-L8):
 
 	'#streetView': {
 		position: {
@@ -59,7 +59,7 @@ First of all we need to set the position. We use the ID we've assigned the tag i
 > **NOTE:** Strange enough the [Android API](https://developers.google.com/maps/documentation/android-api/streetview#set_the_location_of_the_panorama) does not allow you set the heading. It seems always start headed North.
 
 ##### Customize the user-controlled functionality
-There are a few features you can disable. All of them are on by default. In the Sample App I have [overlaid some buttons](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/views/android/streetview.xml#L8-L13) so you can easily [toggle](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/controllers/android/streetview.js#L5-L13) these boolean properties.
+There are a few features you can disable. All of them are on by default. In the Sample App I have [overlaid some buttons](app/views/android/streetview.xml#L8-L13) so you can easily [toggle](app/controllers/android/streetview.js#L5-L13) these boolean properties.
 
 * `panning`: Determines whether the user will be able to re-orient the camera by dragging.
 * `userNavigation`: Determines whether the user will be able to move to a different panorama. Users can use a single tap on navigation links, or double tap the view, to move to a new panorama.

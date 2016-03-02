@@ -18,12 +18,12 @@ To select a Live Photo from your device you use [Ti.Media.openPhotoGallery()](ht
 
 > **NOTE:** You cannot use `Ti.Media.MEDIA_TYPE_LIVEPHOTO` without also including `Ti.Media.MEDIA_TYPE_PHOTO` in `mediaTypes`.
 
-See the the Sample App's [livephoto.js](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/controllers/ios/livephoto.js) controller for the implementation.
+See the the Sample App's [livephoto.js](app/controllers/ios/livephoto.js) controller for the implementation.
 
 #### Displaying a Live Photo
 Live Photos cannot be displayed in a `Ti.UI.ImageView`, but only the new [Ti.UI.iOS.LivePhotoView](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.LivePhotoView).
 
-Alloy [does not yet support LivePhotoView](https://jira.appcelerator.org/browse/ALOY-1356) which means we have to tell Alloy to use the `Ti.UI.iOS` namespace [ourselves](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/views/ios/livephoto.xml#L10-L11):
+Alloy [does not yet support LivePhotoView](https://jira.appcelerator.org/browse/ALOY-1356) which means we have to tell Alloy to use the `Ti.UI.iOS` namespace [ourselves](app/views/ios/livephoto.xml#L10-L11):
 
 	<LivePhotoView ns="Ti.UI.iOS" .. />
 	
@@ -34,7 +34,7 @@ The view supports force touch interaction with the Live Photo out of the box. Ju
 #### Programmatic Playback
 You can also programmatically start and stop the playback. Use [Ti.UI.iOS.LivePhotoView.startPlaybackWithStyle()](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.LivePhotoView-method-startPlaybackWithStyle) to start and [stopPlayback()](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.LivePhotoView-method-stopPlayback) to cancel. The first method accepts a [parameter](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.LivePhotoView-method-stopPlayback) to select full playback or the hint style that you also see as a LivePhoto scrolls into view in the Photos app. This is also the only use case that Apple suggests you should use this method for.
 
-In the [livephoto.js](https://github.com/appcelerator-developer-relations/appc-sample-ti520/blob/master/app/controllers/ios/livephoto.js#L34) controller we playback with hint style after we've initialised the LivePhotoView with the Live Photo you selected:
+In the [livephoto.js](app/controllers/ios/livephoto.js#L34) controller we playback with hint style after we've initialised the LivePhotoView with the Live Photo you selected:
 
 	$.livePhotoView.startPlaybackWithStyle(Ti.UI.iOS.LIVEPHOTO_PLAYBACK_STYLE_HINT);
 

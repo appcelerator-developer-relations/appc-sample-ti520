@@ -23,3 +23,4 @@ In the comings days I will publish walkthroughs on some of the main features in 
 * [Launch Files, iPad Pro, Slide Over and Split View](docs/launchfiles.md)
 * [Live Photos](docs/livephotos.md)
 * [Google Street View Panorama](docs/streetview.md)
+* [Android Activity & Shared Element Transitions](docs/transitions.md)
