@@ -4,7 +4,7 @@ Android 5.0 (API level 21) introduced [Material Design](http://developer.android
 
 Now in Titanium 5.2.0 we add support for customized [Activity & Shared Element Transitions](https://developer.android.com/training/material/animations.html#Transitions). In this blog post I'll walk you through this using the new [Titanium 5.2.0 Sample App](http://github.com/appcelerator-developer-relations/appc-sample-ti520):
 
-<iframe width="420" height="315" src="https://www.youtube-nocookie.com/embed/Cg8HmQBP4jk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+[![video](http://img.youtube.com/vi/Cg8HmQBP4jk/0.jpg)](https://www.youtube.com/embed/Cg8HmQBP4jk)
 
 #### What is an Activity?
 In Titanium each Window or TabGroup creates and is linked to a new [Activity](http://developer.android.com/guide/components/activities.html). When the user presses the [system back button](http://developer.android.com/training/implementing-navigation/temporal.html) he will return to the previous activity on the stack. You can access the Activity via the [activity property](http://docs.appcelerator.com/platform/latest/#!/api/* `Ti.UI.Window-property-activity).
