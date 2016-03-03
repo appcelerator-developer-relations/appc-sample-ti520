@@ -4,7 +4,7 @@
 
 In this blog post I'll walk you through all of this using the new [Titanium 5.2.0 Sample App](http://github.com/appcelerator-developer-relations/appc-sample-ti520):
 
-[![video](http://img.youtube.com/vi/XAxrq1hq7JA/0.jpg)](https://www.youtube.com/embed/XAxrq1hq7JA)
+[![video](http://img.youtube.com/vi/XAxrq1hq7JA/0.jpg)](https://www.youtube.com/watch?v=XAxrq1hq7JA)
 
 #### Capturing a Live Photo
 Although Apple's [Reference](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIImagePickerController_Class/index.html#//apple_ref/doc/uid/TP40007070-CH3-DontLinkElementID_2) isn't really clear about it does say:
