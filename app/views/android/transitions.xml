@@ -38,7 +38,7 @@
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementExitTransition</Label>
-        <Label class="help">Additional animation before shared elements use the enter transition set on A to animate from Window A to B. Notice that none of the currently exposed transitions would be noticeable.</Label>
+        <Label class="help">Additional animation before shared elements use the enter transition set on A to animate from Window A to B.</Label>
         <Picker id="activitySharedElementExitTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
@@ -51,7 +51,7 @@
         </Picker>
 
         <Label class="help tpad">Ti.UI.Window.activitySharedElementReenterTransition</Label>
-        <Label class="help">Additional transition after shared elements have used the return transition set on B to animate from Window B to A. Defaults to the exit transition.  Notice that none of the currently exposed transitions would be noticeable.</Label>
+        <Label class="help">Additional transition after shared elements have used the return transition set on B to animate from Window B to A. Defaults to the exit transition.</Label>
         <Picker id="activitySharedElementReenterTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
