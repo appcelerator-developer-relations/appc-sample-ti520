@@ -6,7 +6,7 @@
       <View class="vbox">
 
         <Label class="help">Ti.UI.Window.activityEnterTransition</Label>
-        <Label class="help">Animation of Window B as it opens. Defaults to FADE_IN if there's a shared element and the theme otherwise.</Label>
+        <Label class="help">Animation of Window B as it opens. Defaults to FADE_IN.</Label>
         <Picker id="activityEnterTransition" class="tpad-s">
           <Column>
             <Row title="undefined"/>
