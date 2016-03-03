@@ -20,10 +20,9 @@ The examples and code itself should be fairly self explanatory, but we will publ
 ### Via Appcelerator Studio
 
 * Import it via *Dashboard* if available.
-* Or import it via *File > Import... > Git > Git Repository as New Project*
-	* Select *URI* and enter:
+* Or import it via *File > Import... > Git > Git Repository as New Project* with *URI*:
 
-			https://github.com/appcelerator-developer-relations/appc-sample-ti520
+		https://github.com/appcelerator-developer-relations/appc-sample-ti520
 
 * Select a Simulator or Device to build to via *Run > Run As*.
 
