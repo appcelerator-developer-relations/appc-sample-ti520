@@ -121,14 +121,22 @@ function initMultitasking() {
   // 1) This app Slides Over another app
   // 2) This app goes from Slide Over to Split View
   // 3) This app goes from quarter to half Split View or visa versa
-  // 4) The Split View devider is dragged but bounces back to existing mode
-  // 5) This app goes from Split View to full view by dragging the devider to the left edge
-  // 6) This app goes from Split View to Slide Over (via singletap on devider)
-  // 7) Another app that was Slide Over this app goes to Split View
+  // 4) The user dragged the Split View devider but released it to bounce back to existing mode
+  // 5) This app goes from Split View to full view (by dragging the devider to the left edge)
+  // 6) This app goes from Split View to Slide Over (by singletap on devider)
+  // 7) Another app goes from Slide Over to Split View
   //
   // It does not fire when:
-  // 1) This app goes from Split View back full view because the other app goes back from Split View to Slide Over (via singletap on devider)
+  // 1) Another app goes from Slit View to Slide Over (by singletap on devider)
   Ti.App.addEventListener('resumed', logDimensions);
+
+  // 1) Another app starts to Slide Over
+  // 2) Another app starts to go from right Split View to Slide Over (by singletap on devider)
+  // 3) The user starts dragging the Split View devider
+  Ti.App.addEventListener('pause', logDimensions);
+
+  // This event fires when another app is dragged from quarter or half Split View to fullscreen
+  Ti.App.addEventListener('paused', logDimensions);
 }
 
 // Android: Hack to delegate the creation of the TabGroup's menu to the active tab
