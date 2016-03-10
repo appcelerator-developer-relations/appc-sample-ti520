@@ -32,4 +32,17 @@ var log = require('log');
   Alloy.Globals.isForceTouchSupported = (OS_IOS && Ti.UI.iOS.forceTouchSupported);
   Alloy.Globals.isWatchSupported = (OS_IOS && Ti.WatchSession.isSupported);
 
+  initAppshortcuts();
+
 })(this);
+
+// Set in controllers/appshortcuts.js
+function initAppshortcuts() {
+
+  // Fired when the shortcut is used
+  Ti.App.iOS.addEventListener('shortcutitemclick', function onShortcutitemclick(e) {
+    log.args('Ti.App.iOS:shortcutitemclick', e);
+
+    alert('Hi ' + e.userInfo.person.fullName);
+  });
+}

@@ -1,26 +1,5 @@
 var log = require('log');
 
-/**
- * I wrap code that executes on creation in a self-executing function just to
- * keep it organised, not to protect global scope like it would in alloy.js
- */
-(function constructor() {
-  Ti.App.iOS.addEventListener('shortcutitemclick', onShortcutitemclick);
-})();
-
-function onClose(e) {
-
-  // Always clean up global event listeners
-  Ti.App.iOS.removeEventListener('shortcutitemclick', onShortcutitemclick);
-}
-
-// Fired when the shortcut is used
-function onShortcutitemclick(e) {
-  log.args('Ti.App.iOS:shortcutitemclick', e);
-
-  alert('Hi ' + e.userInfo.person.fullName);
-}
-
 function createShortcut(e) {
 
   if (Ti.Contacts.hasContactsPermissions()) {

@@ -3,7 +3,7 @@
 
   color: 'blue',          // message color
   tintColor: 'green',     // completed part
-  trackTintColor: 'red',  // incompleted part
+  trackTintColor: 'red',  // uncompleted part
 
   // FIXME: https://jira.appcelerator.org/browse/TIMOB-20404
   bottom: 20,
