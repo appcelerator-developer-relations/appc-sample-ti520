@@ -15,7 +15,7 @@ Let's start with iOS:
 * [Small but not forgotten](#small-but-not-forgotton)
 * [Renamed APIs](#renamed-apis)
 
-#### MenuPopup
+#### MenuPopup, and so
 
 The last remaining new UI component added in this release is [Ti.UI.iOS.MenuPopup](http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iOS.MenuPopup) which implements [UIMenuController](https://developer.apple.com/library/prerelease/ios/documentation/iPhone/Reference/UIMenuController_Class/index.html). In TextFields and TextAreas these popup automatically with edit options like cut, copy, paste etc. Alloy support is [under way](https://jira.appcelerator.org/browse/ALOY-1357), so open the [menupopup.js](../app/controllers/ios/menupopup.js) controller to see how we instantiate and configure this menu to show with any view.
 
