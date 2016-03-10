@@ -14,7 +14,7 @@ The examples and code itself should be fairly self explanatory, but we will publ
 * [Live Photos](docs/livephotos.md)
 * [Google Street View Panorama](docs/streetview.md)
 * [Android Activity & Shared Element Transitions](docs/transitions.md)
-* [iOS Wrap](docs/ios.md)
+* [Wrap-up for iOS](docs/ios.md)
 
 ## Running the Sample
 
