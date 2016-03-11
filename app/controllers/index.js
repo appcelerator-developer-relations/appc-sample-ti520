@@ -177,6 +177,8 @@ function initShortcut() {
     // Wait for the TabGroup to be open
     $.index.addEventListener('open', function(e) {
       openSample(sample);
+
+      alert('You have used the additional launch shortcut.');
     });
   }
 }

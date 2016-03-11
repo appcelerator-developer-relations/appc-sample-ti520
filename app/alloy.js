@@ -32,7 +32,9 @@ var log = require('log');
   Alloy.Globals.isForceTouchSupported = (OS_IOS && Ti.UI.iOS.forceTouchSupported);
   Alloy.Globals.isWatchSupported = (OS_IOS && Ti.WatchSession.isSupported);
 
-  initAppshortcuts();
+  if (OS_IOS) {
+    initAppshortcuts();
+  }
 
 })(this);
 

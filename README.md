@@ -8,13 +8,14 @@ For more information on Titanium 5.2.0 see the [official announcement](http://ww
 
 ## Walkthroughs
 
-The examples and code itself should be fairly self explanatory, but we will publish detailed walkthroughs on some of the main features. Published so far:
+The examples and code itself should be fairly self explanatory, but we've published detailed walkthroughs on some of the main features:
 
 * [Launch Files, iPad Pro, Slide Over and Split View](docs/launchfiles.md)
 * [Live Photos](docs/livephotos.md)
 * [Google Street View Panorama](docs/streetview.md)
 * [Android Activity & Shared Element Transitions](docs/transitions.md)
 * [Wrap-up for iOS](docs/ios.md)
+* [Wrap-up for Android](docs/android.md)
 
 ## Running the Sample
 
