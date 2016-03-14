@@ -32,7 +32,7 @@ The examples and code itself should be fairly self explanatory, but we've publis
 
 1. Clone the repository:
 
-		git clone https://github.com/appcelerator-developer-relations/appc-sample-ti500
+		git clone https://github.com/appcelerator-developer-relations/appc-sample-ti520
 
 2. To run it with `appc run` first import it to the platform:
 
