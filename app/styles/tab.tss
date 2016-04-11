@@ -1,10 +1,5 @@
 'Tab': {
   iconInsets: {
-    top: 5,
-
-    // Bottom should always be the negative of top
-    // Other values will lead to unpredicable results
-    // FIXME: https://jira.appcelerator.org/browse/TIMOB-20405
-    bottom: -5
+    top: 5
   }
 }

@@ -2,20 +2,6 @@ var log = require('log');
 
 var timeout;
 
-// Alloy does not support PopupMenu yet
-// FIXME: https://jira.appcelerator.org/browse/ALOY-1357
-$.menu = (function() {
-
-  var menu = Ti.UI.iOS.createMenuPopup({
-    items: ['Option A', 'Option B']
-  });
-
-  menu.addEventListener('click', onMenuPopupClick);
-
-  return menu;
-
-})();
-
 function showWithDefaults(e) {
   show({
     view: e.source

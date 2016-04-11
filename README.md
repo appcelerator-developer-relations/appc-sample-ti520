@@ -1,6 +1,6 @@
 # Titanium 5.2.0 Sample App
 
-> **NOTE:** This Sample App requires Titanium 5.2.0 and Alloy 1.7.33. It supports Android 4.x and iOS 9.x. Some examples might be restricted to specific platforms or devices.
+> **NOTE:** This Sample App requires Titanium >=5.2.2<5.3 and Alloy >=1.8.5 (part of AppC CLI >=5.2.2). It supports Android 4.x and iOS 9.x. Some examples might be restricted to specific platforms or devices.
 
 ![screenshots](docs/assets/screenshots.png)
 

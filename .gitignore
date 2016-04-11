@@ -12,3 +12,5 @@ Thumbs.db
 extensions/Ti 5.2.0/Ti 5.2.0.xcodeproj/xcuserdata
 extensions/Ti 5.2.0/Ti 5.2.0.xcodeproj/project.xcworkspace
 NOTES.md
+/platform
+/i18n
